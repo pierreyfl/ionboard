@@ -60,6 +60,8 @@ Prelaunchr::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   
+  ActionMailer::Base.delivery_method = :smtp
+  
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
@@ -70,9 +72,9 @@ Prelaunchr::Application.configure do
     :enable_starttls_auto => true
   }
 
-  ActionMailer::Base.delivery_method = :smtp
+  
 
-  config.action_mailer.default_url_options = { :host => 'prelaunch.ionboardtech.com' }
+  config.action_mailer.default_url_options = { :host => 'ionboardtech.com' }
   
 
   # Log the query plan for queries taking more than this (works
