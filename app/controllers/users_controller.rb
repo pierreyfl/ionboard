@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_filter :skip_first_page, only: :new
-  before_filter :handle_ip, only: :create
+  #before_filter :handle_ip, only: :create
 
   def new
     @bodyId = 'home'
@@ -16,9 +16,12 @@ class UsersController < ApplicationController
   def create
     ref_code = cookies[:h_ref]
     email = params[:user][:email]
+    if User.find_by_email(email)
+      redirect_to '/refer-a-friend'
+    else
     @user = User.new(email: email)
     @user.referrer = User.find_by_referral_code(ref_code) if ref_code
-
+    
     if @user.save
       cookies[:h_email] = { value: @user.email }
       #UserMailer.signup_email(@user).deliver_now
@@ -26,6 +29,7 @@ class UsersController < ApplicationController
     else
       logger.info("Error saving user with email, #{email}")
       redirect_to root_path, alert: 'Something went wrong!'
+    end
     end
   end
 
