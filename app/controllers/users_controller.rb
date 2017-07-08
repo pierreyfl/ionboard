@@ -17,6 +17,7 @@ class UsersController < ApplicationController
     ref_code = cookies[:h_ref]
     email = params[:user][:email]
     if User.find_by_email(email)
+      cookies[:h_email] = { value: email }
       redirect_to '/refer-a-friend'
     else
     @user = User.new(email: email)
