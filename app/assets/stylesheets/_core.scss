@@ -31,7 +31,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: image-url("home/hero.jpg") center center no-repeat;
+	background: image-url("home/ionboard.png") center center no-repeat;
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -248,7 +248,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #FFFFFF;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -257,7 +257,6 @@ html.home{
 
 #refer .header .content{
 	width: 315px;
-	margin: 0 auto;
 }
 
 #refer .header p{
@@ -274,14 +273,13 @@ html.home{
 
 #refer .header .logo{
 	font-weight: normal;
-	font-size: 0;
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: image-url("refer/logo.png") 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
+	background: image-url("home/ionboard-logo.png") 0 0 no-repeat;
+	background-size: 150px 25px;
+	height: 25px;
+	width: 150px;
 	margin-top: 15px;
 }
 
@@ -294,11 +292,12 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/mammoth.png") 0 0 no-repeat;
-	background-size: 610px 394px;
+	background: image-url("refer/ionboard-single.png") center center no-repeat;
+	background-size: 120px 350px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
+  margin: auto;
 }
 
 #refer .mammoth .need{
@@ -434,10 +433,11 @@ html.home{
 	background-size: 1px 4px;
 }
 
-#refer .prize-two .progress .mover .bar{ width: 312px; }
-#refer .prize-three .progress .mover .bar{ width: 566px; }
-#refer .prize-four .progress .mover .bar{ width: 820px; }
-#refer .prize-five .progress .mover .bar{ width: 1120px; }
+#refer .prize-1 .progress .mover .bar{ width: 200px; }
+#refer .prize-2 .progress .mover .bar{ width: 211px; }
+#refer .prize-3 .progress .mover .bar{ width: 222px; }
+#refer .prize-4 .progress .mover .bar{ width: 233px; }
+
 
 
 #refer .prizes ul.products{
@@ -473,16 +473,16 @@ html.home{
 #refer .prizes .products li.product{
 	height: 100%;
 	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
+	width: 11px;
+
 	float: left;
 	position: relative;
 }
 
 #refer .prizes .products li.product .circle{
-	height: 30px;
-	width: 30px;
-	border-radius: 15px;
+	height: 10px;
+	width: 1px;
+	border-radius: 1px;
 	border: 1px solid #DAD9D2;
 	text-align: center;
 	line-height: 30px;
@@ -490,14 +490,28 @@ html.home{
 	overflow: hidden;
 	background: #F1F0EE;
 	font-weight: bold;
-	margin: 0 auto;
+	margin: 47px auto;
+}
+
+#refer .prizes .products li.product .circle-last{
+	height: 30px;
+	width: 30px;
+	border-radius: 20px;
+	border: 1px solid #DAD9D2;
+	text-align: center;
+	line-height: 30px;
+	color: #868282;
+	overflow: hidden;
+	background: #F1F0EE;
+	font-weight: bold;
+	margin: 37px auto;
 }
 
 #refer .prizes .products li.product .sep{
 	width: 12px;
 	height: 2px;
 	background: transparent;
-	margin: 13px auto 13px;
+	margin: 0px auto 13px;
 }
 
 #refer .prizes .products li.product .caret{
@@ -545,11 +559,11 @@ html.home{
 }
 
 #refer .prizes .products li.product .tooltip{
-	height: 254px;
-	width: 190px;
+	height: 100px;
+	width: 100px;
 	border: 4px solid #074E6F;
 	position: absolute;
-	top: -285px;
+	top: -80px;
 	left: -32px;
 	display: none;
 	background: #FFF;
