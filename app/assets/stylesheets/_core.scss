@@ -627,6 +627,8 @@ html.home{
 /*
 	RETINA
 */
+
+
 @media only screen and (min--moz-device-pixel-ratio: 2),
 only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -686,6 +688,14 @@ only screen and (min-device-pixel-ratio: 2) {
 		background: image-url("refer/caret-selected@2x.png") center center no-repeat;
 		background-size: 16px 10px;
 	}
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  #home .hero{
+	background: image-url("home/ionboard-mobile.jpeg") center center no-repeat !important;
+  height: 300px;
+}
 }
 
 
