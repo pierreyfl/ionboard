@@ -696,6 +696,15 @@ only screen and (min-device-pixel-ratio: 2) {
 	background: image-url("home/ionboard-mobile.jpeg") center center no-repeat !important;
   height: 300px;
 }
+#home {
+  min-width: 0;
+  width: 100%;
+  
+}
+
+.form-wrap {
+  width: 100% !important;
+}
 }
 
 
