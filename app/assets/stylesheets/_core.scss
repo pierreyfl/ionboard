@@ -32,7 +32,7 @@ html.home{
 #home .hero{
 	width: 100%;
 	height: 600px;
-	background: image-url("home/ionboard.png");
+	background: image-url("home/bg-2.jpg");
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
@@ -82,18 +82,19 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: black;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
 	margin: 15px 0;
+  padding: 10px;
 }
 
 #home .form-wrap .email{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid black;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -101,7 +102,7 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: black;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -249,7 +250,7 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
+	height: 60px;
 	background: #FFFFFF;
 	width: 100%;
 	overflow:hidden;
@@ -279,14 +280,14 @@ html.home{
 	margin-right: 14px;
 	letter-spacing: 1px;
 	background: image-url("home/ionboard-logo.png") 0 0 no-repeat;
-	background-size: 150px 25px;
-	height: 25px;
+	background-size: 150px 38px;
+	height: 38px;
 	width: 150px;
 	margin-top: 15px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: black;
 	height: 391px;
 	overflow: hidden;
 }
@@ -294,8 +295,8 @@ html.home{
 #refer .mammoth{
 	width: 612px;
 	height: 394px;
-	background: image-url("refer/ionboard-single.png") center center no-repeat;
-	background-size: 120px 350px;
+	background: image-url("refer/ionboard-3.jpg") center center no-repeat;
+	background-size: 400px 400px;
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
@@ -326,7 +327,7 @@ html.home{
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
+	color: white;
 	font-weight: bold;
 	margin-top: 42px;
 }
@@ -336,13 +337,13 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: white;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
+	color: white;
 	font-size: 14px;
 	text-transform: none;
 	margin-top: 15px;
@@ -404,7 +405,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: black;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -452,8 +453,7 @@ html.home{
 
 #refer .prizes .products li.title{
 	height: 100%;
-	text-transform: uppercase;
-	color: #074E6F;
+	color: black;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
@@ -583,20 +583,20 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: black;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: black;
 }
 
 #refer .prizes p.check{
 	text-align: center;
 	font-size: 16px;
-	color: #858181;
+	color: black;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 5px;
@@ -605,7 +605,7 @@ html.home{
 #refer .prizes p.ship{
 	text-align: center;
 	font-size: 16px;
-	color: #858181;
+	color: black;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 50px;
@@ -634,7 +634,7 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: image-url("home/ionboard.png");
+		background: image-url("home/bg-1.jpg");
     background-size: cover;
     background-position: center center;
 	}
@@ -646,7 +646,7 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .header .logo{
 		background: image-url("home/ionboard-logo.png") 0 0 no-repeat;
-		background-size: 106px 19px;
+		background-size: 150px 38px;
 	}
 
 	#refer .mammoth{
@@ -693,8 +693,8 @@ only screen and (min-device-pixel-ratio: 2) {
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   #home .hero{
-	background: image-url("home/ionboard-mobile.jpeg") center center no-repeat !important;
-  height: 300px;
+	background: image-url("home/bg-1-mobile.jpg") center center!important;
+  height: 200px;
 }
 #home {
   min-width: 0;
@@ -719,6 +719,7 @@ only screen and (min-device-pixel-ratio: 2) {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-top: 20px;
   
 }
 
