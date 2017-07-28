@@ -46,20 +46,12 @@
     <ul class="products clearfix">
       <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">ionboard</p></li>
       <% stops.each do |stop| %>
-        <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == '80' %>last<% end %>">
-          <% if stop["class"] == "80" %>
-            <div class="circle-last">80</div>
-          <% else %>
-          <div class="circle"></div>
-          <% end %>
-
-          <div class="tooltip">
-            <p style="text-decoration: underline; font-size: 12px;"><%= stop["class"] %> Friends</p>
-            <p style="text-decoration: underline; font-size: 12px;">Discount</p>
-            <p style="font-size: 40px; line-height: 1.8;">$<%= (stop["class"].to_i * 5).to_s %></p>
-          </div>
-        </li>
-      <% end %>
+              <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+                <div class="circle"><%= stop["count"] %></div>
+                <div class="sep"></div>
+                <p><%= stop["html"].html_safe %></p>
+              </li>
+            <% end %>
     </ul>
 
     <div class="progress">
