@@ -16,21 +16,33 @@ class UsersController < ApplicationController
   def create
     ref_code = cookies[:h_ref]
     email = params[:user][:email]
-    if User.find_by_email(email)
-      cookies[:h_email] = { value: email }
-      redirect_to '/refer-a-friend'
-    else
-    @user = User.new(email: email)
-    @user.referrer = User.find_by_referral_code(ref_code) if ref_code
+    address = request.env['HTTP_X_FORWARDED_FOR']
+    current_ip = IpAddress.find_by_address(address)
     
-    if @user.save
-      cookies[:h_email] = { value: @user.email }
-      #UserMailer.signup_email(@user).deliver_now
-      redirect_to '/refer-a-friend'
+    if current_ip.count > 2
+      if User.find_by_email(email)
+        cookies[:h_email] = { value: email }
+        redirect_to '/refer-a-friend'
+      else
+        redirect_to root_path, alert: 'You have created too many accounts!'
+      end
     else
-      logger.info("Error saving user with email, #{email}")
-      redirect_to root_path, alert: 'Something went wrong!'
-    end
+      if User.find_by_email(email)
+        cookies[:h_email] = { value: email }
+        redirect_to '/refer-a-friend'
+      else
+        @user = User.new(email: email)
+        @user.referrer = User.find_by_referral_code(ref_code) if ref_code
+    
+        if @user.save
+          cookies[:h_email] = { value: @user.email }
+          #UserMailer.signup_email(@user).deliver_now
+          redirect_to '/refer-a-friend'
+        else
+          logger.info("Error saving user with email, #{email}")
+          redirect_to root_path, alert: 'Something went wrong!'
+        end
+      end
     end
   end
 
@@ -80,10 +92,6 @@ class UsersController < ApplicationController
     current_ip = IpAddress.find_by_address(address)
     if current_ip.nil?
       current_ip = IpAddress.create(address: address, count: 1)
-    elsif current_ip.count > 2
-      logger.info('IP address has already appeared three times in our records.
-                 Redirecting user back to landing page.')
-      return redirect_to root_path
     else
       current_ip.count += 1
       current_ip.save
