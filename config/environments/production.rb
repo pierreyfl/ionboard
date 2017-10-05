@@ -74,7 +74,7 @@ Prelaunchr::Application.configure do
 
   
 
-  config.action_mailer.default_url_options = { :host => 'prelaunch.ionboardtech.com.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'referral.ionboardtech.com' }
   
 
   # Log the query plan for queries taking more than this (works
