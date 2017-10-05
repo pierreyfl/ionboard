@@ -68,7 +68,7 @@ class UsersController < ApplicationController
         user.email_activate
         flash[:success] = "Welcome to the Sample App! Your email has been confirmed.
         Please sign in to continue."
-        redirect_to signin_url
+        redirect_to root_url
       else
         flash[:error] = "Sorry. User does not exist"
         redirect_to root_url
