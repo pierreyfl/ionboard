@@ -1,10 +1,15 @@
 class UserMailer < ActionMailer::Base
-  default from: "Harry's <welcome@harrys.com>"
+  default from: "ionboard <welcome@ionboardtech.com>"
 
   def signup_email(user)
     @user = user
-    @twitter_message = "#Shaving is evolving. Excited for @harrys to launch."
+    @twitter_message = "IONBoard"
 
     mail(:to => user.email, :subject => "Thank you for signing up!")
   end
+  
+  def registration_confirmation(user)
+      @user = user
+      mail(:to => user.email, :subject => "Registration Confirmation")
+   end
 end

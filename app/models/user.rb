@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   validates :referral_code, uniqueness: true
 
   before_create :create_referral_code
+  before_create :confirmation_token
   after_create :send_welcome_email
 
   REFERRAL_STEPS = [
@@ -30,6 +31,14 @@ class User < ActiveRecord::Base
       'class' => 'four'
     }
   ]
+  
+  
+  def email_activate
+    self.email_confirmed = true
+    self.confirm_token = nil
+    save!(:validate => false)
+  end
+    
 
   private
 
@@ -40,4 +49,11 @@ class User < ActiveRecord::Base
   def send_welcome_email
     UserMailer.delay.signup_email(self)
   end
+  
+  def confirmation_token
+    if self.confirm_token.blank?
+      self.confirm_token = SecureRandom.urlsafe_base64.to_s
+    end
+  end
+  
 end

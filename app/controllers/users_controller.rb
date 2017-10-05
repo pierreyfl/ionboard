@@ -35,6 +35,7 @@ class UsersController < ApplicationController
         @user.referrer = User.find_by_referral_code(ref_code) if ref_code
     
         if @user.save
+          UserMailer.registration_confirmation(@user).deliver
           cookies[:h_email] = { value: @user.email }
           #UserMailer.signup_email(@user).deliver_now
           redirect_to '/refer-a-friend'
@@ -59,6 +60,19 @@ class UsersController < ApplicationController
         format.html # refer.html.erb
       end
     end
+  end
+  
+  def confirm_email
+      user = User.find_by_confirm_token(params[:id])
+      if user
+        user.email_activate
+        flash[:success] = "Welcome to the Sample App! Your email has been confirmed.
+        Please sign in to continue."
+        redirect_to signin_url
+      else
+        flash[:error] = "Sorry. User does not exist"
+        redirect_to root_url
+      end
   end
 
   def policy
