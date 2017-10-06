@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     address = request.env['HTTP_X_FORWARDED_FOR']
     current_ip = IpAddress.find_by_address(address)
     
-    if current_ip.count > 2
+    if current_ip.count > 1
       if User.find_by_email(email)
         cookies[:h_email] = { value: email }
         redirect_to '/refer-a-friend'
