@@ -33,7 +33,8 @@ class UsersController < ApplicationController
       else
         @user = User.new(email: email)
         @user.referrer = User.find_by_referral_code(ref_code) if ref_code
-    
+        @user.ip_address = address
+        
         if @user.save
           UserMailer.registration_confirmation(@user).deliver
           cookies[:h_email] = { value: @user.email }
