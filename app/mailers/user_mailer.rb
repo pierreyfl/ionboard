@@ -10,6 +10,20 @@ class UserMailer < ActionMailer::Base
   
   def registration_confirmation(user)
       @user = user
-      mail(:to => user.email, :subject => "Registration Confirmation")
+      headers "X-SMTPAPI" => {
+        sub: {
+          "%name%" => [@user.email]
+          
+        },
+        filters: {
+          templates: {
+            settings: {
+              enable: 1,
+              template_id: 'eba4703c-27f6-4272-bfcf-19b3e4c90e0e' 
+            }
+          }  
+        }  
+      }.to_json
+      mail(:to => user.email, :subject => "Thank you for signing up for ionboard!")
    end
 end
