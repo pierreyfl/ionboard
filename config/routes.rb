@@ -9,6 +9,7 @@ Prelaunchr::Application.routes.draw do
   post 'users/create' => 'users#create'
   get 'refer-a-friend' => 'users#refer'
   get 'privacy-policy' => 'users#policy'
+  get 'customise' => 'users#customise'
   
   resources :users do
     member do

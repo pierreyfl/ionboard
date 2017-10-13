@@ -38,6 +38,10 @@ class User < ActiveRecord::Base
     self.confirm_token = nil
     save!(:validate => false)
   end
+  
+  def display_name
+    self.email
+  end
     
 
   private
