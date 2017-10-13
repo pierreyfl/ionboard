@@ -12,7 +12,8 @@ class UserMailer < ActionMailer::Base
       @user = user
       headers "X-SMTPAPI" => {
         sub: {
-          "%name%" => [@user.email]
+          "%sender_name%" => [@user.email],
+          "%sender_id%" = [@user.confirm_token]
           
         },
         filters: {
