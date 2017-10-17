@@ -1,1 +1,10 @@
 @import "FancyProductDesigner";
+
+
+@font-face {
+    font-family: 'FontFPD';
+    src: asset-url('FontFPD.eot?ogkrv9');
+    src: asset-url('FontFPD.eot?ogkrv9#iefix') format('embedded-opentype'), asset-url('FontFPD.ttf?ogkrv9') format('truetype'), asset-url('FontFPD.woff?ogkrv9') format('woff'), asset-url('FontFPD.svg?ogkrv9#FontFPD') asset-format('svg');
+    font-weight: 400;
+    font-style: normal
+}
