@@ -7,6 +7,7 @@ Prelaunchr::Application.routes.draw do
   root :to => "users#new"
 
   post 'users/create' => 'users#create'
+  post 'save_image' , :to => redirect('/save_image.php')
   get 'refer-a-friend' => 'users#refer'
   get 'privacy-policy' => 'users#policy'
   get 'customise' => 'users#customise'
@@ -16,6 +17,8 @@ Prelaunchr::Application.routes.draw do
       get :confirm_email
     end
   end
+  
+  resources :orders
 
   unless Rails.application.config.consider_all_requests_local
     get '*not_found', to: 'users#redirect', :format => false
