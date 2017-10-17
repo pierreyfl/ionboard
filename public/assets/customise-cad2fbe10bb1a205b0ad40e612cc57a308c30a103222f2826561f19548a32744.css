@@ -1,0 +1,4509 @@
+/* RESET */
+/* line 2, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container div,
+.fpd-container picture,
+.fpd-container input,
+.fpd-container span,
+.fpd-container textarea,
+.fpd-container label,
+.fpd-container select {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: none;
+  outline: none;
+  line-height: 20px;
+}
+
+/* line 20, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-product *,
+.fpd-design * {
+  display: none;
+}
+
+/* line 24, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-design img {
+  display: none;
+}
+
+/* line 27, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container input,
+.fpd-element-toolbar input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: auto;
+}
+
+/* line 34, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar,
+.fpd-element-toolbar * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 39, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar input {
+  margin: 0 !important;
+}
+
+/* COLOR SCHEME - here you can define your own color scheme */
+/* Primary Color */
+/* line 44, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-primary-bg-color,
+.fpd-actions-wrapper > .fpd-action-btn:hover,
+.fpd-actions-wrapper > .fpd-action-btn.fpd-active,
+.fpd-thumbnail-preview > .fpd-preview-price {
+  background-color: #1a1a1a;
+}
+
+/* line 50, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-primary-text-color,
+.fpd-navigation > div.fpd-active,
+.fpd-bottom-nav > div.fpd-active {
+  color: #1a1a1a;
+}
+
+/* Secondary Color */
+/* line 56, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-secondary-bg-color,
+.fpd-container .fpd-btn,
+.fpd-modal-wrapper .fpd-modal-content .fpd-btn,
+.fpd-switch-container.fpd-enabled .fpd-switch-toggle,
+.fpd-switch-container.fpd-enabled .fpd-switch-bar,
+.fpd-modal-product-designer.fpd-modal-overlay .fpd-done {
+  background-color: #27AE60;
+}
+
+/* line 64, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn:hover,
+.fpd-modal-wrapper .fpd-modal-content .fpd-btn:hover {
+  background: #2aba67;
+}
+
+/* line 68, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn.fpd-secondary,
+.fpd-modal-wrapper .fpd-modal-content .fpd-btn.fpd-secondary {
+  background: #E0E1E2;
+}
+
+/* line 72, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn.fpd-secondary:hover,
+.fpd-modal-wrapper .fpd-modal-content .fpd-btn.fpd-secondary:hover {
+  background: #e8e9e9;
+}
+
+/* line 76, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn.fpd-dark {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* line 79, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn.fpd-dark:hover {
+  background: rgba(26, 26, 26, 0.6);
+}
+
+/* line 82, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toggle.fpd-enabled {
+  color: #27AE60 !important;
+}
+
+/* Main Text Color */
+/* line 86, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container,
+.fpd-container textarea,
+.fpd-sub-tooltip-theme .tooltipster-content,
+.fpd-modal-wrapper > .fpd-modal-close {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Main Border Color */
+/* line 93, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn,
+.fpd-list > .fpd-list-row,
+.fpd-container.fpd-sidebar > .fpd-mainbar,
+.fpd-container textarea,
+.fpd-container.fpd-sidebar.fpd-sidebar-right > .fpd-mainbar,
+.fpd-container.fpd-main-bar-container .fpd-mainbar,
+.fpd-container .fpd-module input,
+.fpd-thumbnail-preview,
+.fpd-container .fpd-stage-off-canvas,
+.fpd-manage-layers-panel .fpd-sortable-placeholder,
+.fpd-container .fpd-close-off-canvas,
+.fpd-topbar[class*="fpd-off-canvas-"] .fpd-mainbar .fpd-content {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* line 107, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container textarea:focus,
+.fpd-element-toolbar textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* SHADOWS */
+/* line 112, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-1 {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 116, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-2 {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 120, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-3 {
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 124, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-4 {
+  -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+/* line 128, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-5 {
+  -webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* line 132, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-6:before,
+.fpd-shadow-6:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/* line 149, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-6:after {
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/* line 156, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-7 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* line 161, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-7:before,
+.fpd-shadow-7:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+/* line 174, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-8 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* line 179, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-8:before,
+.fpd-shadow-8:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+/* line 192, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-8:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+/* line 199, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-9 {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* line 203, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-9:before,
+.fpd-shadow-9:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+/* line 216, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-shadow-9:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+/* Tooltip */
+/* line 224, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tooltip {
+  cursor: pointer;
+}
+
+/* line 227, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tooltip .fpd-tooltip-content {
+  display: none;
+}
+
+/* line 230, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tooltip-theme,
+.fpd-sub-tooltip-theme,
+.fpd-main-wrapper .fpd-element-tooltip {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 238, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tooltip-theme .tooltipster-content {
+  font-size: 10px;
+  line-height: 12px;
+  padding: 8px 7px 6px;
+  color: #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* line 246, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper .fpd-element-tooltip {
+  display: none;
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  max-width: 250px;
+  padding: 5px 7px;
+  top: 0;
+  z-index: 900;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 259, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tooltip-theme .tooltipster-arrow {
+  display: none !important;
+}
+
+/* line 262, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-tooltip-theme {
+  background: #f5f5f5 !important;
+  pointer-events: all !important;
+}
+
+/* line 266, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-tooltip-theme .tooltipster-content {
+  font-size: 30px;
+  padding: 8px 7px 6px;
+  white-space: nowrap;
+}
+
+/* line 271, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-tooltip-theme .tooltipster-content .fpd-item {
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* line 276, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-tooltip-theme .tooltipster-content .fpd-item:hover {
+  opacity: 1;
+}
+
+/* Scrollbar */
+/* line 280, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.mCSB_outside + .mCSB_scrollTools {
+  right: -2px;
+  margin: 15px 0;
+}
+
+/* Browser Alert */
+/* line 285, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-browser-alert {
+  padding: 10px !important;
+}
+
+/* line 288, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-browser-alert > p {
+  font-size: 14px;
+}
+
+/* line 291, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-browser-alert a {
+  margin-right: 20px;
+  text-decoration: underline;
+  color: white !important;
+}
+
+/* line 296, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-browser-alert {
+  border: 1px solid #E74C3C;
+  background: #E74C3C;
+  color: #fff;
+}
+
+/* Editor Box */
+/* line 302, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-editor-box {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 40px 0;
+  background: #F5F5F5;
+  border: 1px solid #EEEEEE;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 311, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-editor-box > div > p {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+/* line 316, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-editor-box i {
+  font-size: 0.9em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* line 321, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-editor-box > div > p > input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Zoom Lens */
+/* line 328, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.zoomContainer .zoomLens {
+  background-color: #fff;
+}
+
+/* Device Info */
+/* line 332, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-device-info {
+  display: none;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 24px;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Visibility */
+/* line 341, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-visibility {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 200ms, opacity 200ms ease-out;
+  transition: visibility 200ms, opacity 200ms ease-out;
+}
+
+/* line 347, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-visibility.fpd-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Blurred Background */
+/* line 352, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-blurred-background {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  max-width: none !important;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-filter: blur(20px);
+  filter: blur(10px);
+}
+
+/* Helpers */
+/* line 365, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-disabled,
+.fpd-element-toolbar .fpd-disabled,
+.fpd-disabled {
+  opacity: 0.2 !important;
+  cursor: default !important;
+  pointer-events: none;
+}
+
+/* line 372, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-clearfix:before,
+.fpd-clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 379, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-clearfix:after {
+  clear: both;
+}
+
+/* line 382, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-clearfix {
+  zoom: 1;
+}
+
+/* line 385, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-clear {
+  clear: both;
+}
+
+/* line 388, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-left {
+  float: left;
+}
+
+/* line 391, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-right {
+  float: right;
+}
+
+/* line 394, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-hidden {
+  display: none !important;
+}
+
+/* line 397, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* line 400, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-no-padding {
+  padding: 0 !important;
+}
+
+/* line 403, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-fullwidth {
+  width: 100%;
+}
+
+/* line 406, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-help-icon {
+  cursor: help;
+}
+
+/* line 409, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-drag,
+.fpd-context-dialog .fpd-drag {
+  cursor: -webkit-grab !important;
+  cursor: grab !important;
+}
+
+/* line 414, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-drag:active {
+  cursor: -webkit-grabbing !important;
+  cursor: grabbing !important;
+}
+
+/* line 418, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-show-up {
+  opacity: 1 !important;
+}
+
+/* line 421, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-hidden-canvas {
+  position: absolute !important;
+  left: -9999999px;
+}
+
+/* line 425, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[class^="fpd-icon-"]:before {
+  color: inherit !important;
+}
+
+/* GRID */
+/* line 429, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-grid,
+.fpd-element-toolbar .fpd-grid {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 436, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-item {
+  cursor: pointer;
+  width: 50%;
+  height: 100px;
+  max-height: 150px;
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 448, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item {
+  background: #ecf0f1;
+  color: #7f8c8d;
+  margin: 2px 2px 0 0;
+  height: 100px !important;
+  width: calc(50% - 1px) !important;
+  border-radius: 2px;
+}
+
+/* line 456, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item:nth-child(-n+2) {
+  margin-top: 0;
+}
+
+/* line 459, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+/* line 462, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item:hover {
+  background: #cfd9db;
+}
+
+/* line 465, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-item > picture {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 475, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid.fpd-padding > .fpd-item > picture {
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  bottom: 10px;
+}
+
+/* line 481, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-cover > .fpd-item > picture {
+  background-size: cover;
+}
+
+/* line 484, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-contain > .fpd-item > picture {
+  background-size: contain;
+}
+
+/* line 487, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item > picture {
+  height: 55%;
+}
+
+/* line 490, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* line 500, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-category.fpd-item.fpd-title-centered > span {
+  bottom: 50%;
+  font-size: 14px;
+  white-space: normal;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 508, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-item > picture,
+.fpd-item > img {
+  opacity: 1;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 514, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-item:hover > picture,
+.fpd-item:hover > img {
+  opacity: 0.8;
+}
+
+/* line 518, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-photo-grid > .fpd-item > picture {
+  top: 1px;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+}
+
+/* line 524, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid > .fpd-item > picture.fpd-on-loading,
+.fpd-thumbnail-preview picture.fpd-on-loading {
+  background-size: auto;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzJweCcgaGVpZ2h0PSczMnB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgY2xhc3M9InVpbC1kZWZhdWx0Ij48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjA4MzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuMTY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDkwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4yNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTIwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4zMzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjQxNjY2NjY2NjY2NjY2NjdzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE4MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjEwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC41ODMzMzMzMzMzMzMzMzM0cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI3MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNzVzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMwMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuODMzMzMzMzMzMzMzMzMzNHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC45MTY2NjY2NjY2NjY2NjY2cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PC9zdmc+);
+}
+
+/* DYNAMIC COLUMNS */
+/* line 530, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-columns-1 .fpd-grid > .fpd-item {
+  width: 100%;
+  height: 120px;
+}
+
+/* line 534, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-columns-2 .fpd-grid > .fpd-item {
+  width: 50%;
+  height: 100px;
+}
+
+/* line 538, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-columns-3 .fpd-grid > .fpd-item {
+  width: 33%;
+  height: 100px;
+}
+
+/* line 542, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-columns-4 .fpd-grid > .fpd-item {
+  width: 25%;
+  height: 80px;
+}
+
+/* line 546, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-grid-columns-5 .fpd-grid > .fpd-item {
+  width: 20%;
+  height: 60px;
+}
+
+/* line 550, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container {
+  position: relative;
+  max-width: 100%;
+}
+
+/* line 554, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-disable-touch-scrolling canvas {
+  -ms-touch-action: none !important;
+  touch-action: none !important;
+}
+
+/* line 558, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container > div {
+  position: relative;
+}
+
+/* line 561, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  min-width: 1px;
+}
+
+/* line 569, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container > .fpd-main-wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  min-height: 400px;
+  background: url(data:image/png;base64,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);
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 578, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper .fpd-product-stage {
+  position: relative;
+  direction: ltr;
+}
+
+/* line 582, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar .fpd-main-wrapper > .fpd-product-stage {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 590, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-product-stage > .fpd-zoom-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+
+/* line 596, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-scroll-area {
+  height: 100%;
+}
+
+/* LOADER */
+/* line 600, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container > .fpd-loader-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* line 609, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-loader-wrapper > .fpd-loader {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 619, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-loader > .fpd-loader-text {
+  position: absolute;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  padding: 20px 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  -webkit-filter: blur(0);
+}
+
+/* line 631, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-loader > .fpd-loader-circle {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-left: 3px solid #000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: fpd-loader-animation 1.1s infinite linear;
+  animation: fpd-loader-animation 1.1s infinite linear;
+}
+
+/* line 642, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-loader > .fpd-loader-circle,
+.fpd-loader > .fpd-loader-circle:after {
+  border-radius: 50%;
+}
+
+@-webkit-keyframes fpd-loader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes fpd-loader-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* Snap Lines */
+/* line 667, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-snap-line-h,
+.fpd-main-wrapper > .fpd-snap-line-v {
+  position: absolute;
+  z-index: 100;
+  display: none;
+}
+
+/* line 673, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-snap-line-h {
+  border-top: 1px dashed #ccc;
+  width: 100%;
+  height: 2px;
+  top: 10px;
+  left: 0;
+}
+
+/* line 680, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-snap-line-v {
+  border-left: 1px dashed #ccc;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 10px;
+}
+
+/* line 687, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-view-stage textarea {
+  left: -10000px !important;
+  top: 50% !important;
+}
+
+/* View Modal Lock */
+/* line 692, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-modal-lock {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 15;
+}
+
+/* line 702, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-modal-lock.fpd-animated {
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+/* line 706, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-modal-lock.fpd-active {
+  display: block;
+}
+
+/* line 709, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock > .fpd-toggle-lock {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 719, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock > .fpd-toggle-lock > span {
+  display: none;
+  font-size: 80px;
+}
+
+/* line 723, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock > .fpd-toggle-lock > span.fpd-icon-unlocked {
+  display: inline;
+}
+
+/* line 726, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock.fpd-unlocked > .fpd-toggle-lock > span.fpd-icon-locked {
+  display: inline;
+}
+
+/* line 729, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock.fpd-unlocked > .fpd-toggle-lock > span.fpd-icon-unlocked {
+  display: none;
+}
+
+/* line 732, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock > .fpd-toggle-lock > div {
+  font-size: 16px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/* line 738, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-modal-lock.fpd-unlocked {
+  width: 40px;
+  height: 40px;
+  left: 15px;
+  bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  -webkit-box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+  box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+}
+
+/* line 747, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock.fpd-unlocked span {
+  font-size: 20px !important;
+}
+
+/* line 750, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-lock.fpd-unlocked > .fpd-toggle-lock > div {
+  display: none;
+}
+
+/* LIST */
+/* line 754, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-list,
+.fpd-context-dialog .fpd-list {
+  width: 100%;
+  overflow: auto;
+}
+
+/* line 759, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list > .fpd-list-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  overflow: hidden;
+  border-top-width: 1px;
+  border-top-style: solid;
+  cursor: pointer;
+  -webkit-transition: background 300ms ease-out;
+  transition: background 300ms ease-out;
+}
+
+/* line 771, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list > .fpd-list-row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 774, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list > .fpd-list-row:first-child {
+  border-top: none;
+}
+
+/* line 777, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list-row > .fpd-cell-full {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+}
+
+/* line 782, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list-row > div {
+  line-height: 1;
+  padding: 22px 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 789, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-list-row span {
+  font-size: 18px;
+}
+
+/* SNACKBAR */
+/* line 793, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-snackbar-wrapper {
+  position: fixed;
+  left: 12px;
+  bottom: 0;
+  z-index: 100000;
+}
+
+/* line 799, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-snackbar {
+  background: #323232;
+  margin-bottom: 10px;
+  color: #fff;
+  line-height: 18px;
+  font-size: 14px;
+  min-width: 288px;
+  max-width: 568px;
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  border-radius: 2px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 814, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-snackbar p {
+  margin: 0;
+  padding: 16px 24px;
+}
+
+/* line 818, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-snackbar.fpd-show-up {
+  max-height: 300px;
+}
+
+/* BUTTONS */
+/* line 822, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-btn,
+.fpd-modal-wrapper .fpd-btn {
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  border-radius: 2px;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+/* TEXTAREA */
+/* line 837, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container textarea {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 10px;
+  resize: none;
+}
+
+/* line 846, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container textarea:focus,
+.fpd-element-toolbar textarea:focus {
+  outline: none;
+}
+
+/* SWITCH */
+/* line 851, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container {
+  height: 14px;
+  position: relative;
+  width: 36px;
+  cursor: pointer;
+}
+
+/* line 857, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container .fpd-switch-bar {
+  border-radius: 8px;
+  height: 100%;
+  background: #000;
+  opacity: 0.26;
+  width: 100%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+/* line 866, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container .fpd-switch-toggle {
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+  height: 20px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 20px;
+  -webkit-transition: all 2000ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/* line 880, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container .fpd-switch-toggle:after {
+  background: #000;
+  content: " ";
+  width: 36px;
+  height: 36px;
+  top: -8px;
+  left: -8px;
+  opacity: 0.1;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+/* line 896, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container .fpd-switch-toggle:active:after {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 901, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container.fpd-enabled .fpd-switch-toggle {
+  -ms-transform: translate(16px, 0);
+  -webkit-transform: translate(16px, 0);
+  transform: translate(16px, 0);
+}
+
+/* line 906, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-switch-container.fpd-enabled .fpd-switch-toggle:after {
+  background: inherit;
+}
+
+/* Toggles */
+/* line 910, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toggle.fpd-enabled {
+  opacity: 1;
+}
+
+/* Inside Positions */
+/* line 914, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper [class^="fpd-inside-t"],
+.fpd-main-wrapper [class*="fpd-inside-t"] {
+  top: 15px;
+}
+
+/* line 918, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper [class^="fpd-inside-b"],
+.fpd-main-wrapper [class*="fpd-inside-b"] {
+  bottom: 15px;
+}
+
+/* line 922, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper .fpd-inside-tl,
+.fpd-main-wrapper .fpd-inside-bl {
+  left: 15px;
+}
+
+/* line 926, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper .fpd-inside-tc,
+.fpd-main-wrapper .fpd-inside-bc {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 933, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper .fpd-inside-tr,
+.fpd-main-wrapper .fpd-inside-br {
+  right: 15px;
+}
+
+/* Dividers */
+/* line 938, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-h-line {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  clear: both;
+  margin: 10px 0;
+}
+
+/* Color Picker */
+/* line 946, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .sp-replacer,
+.fpd-container .sp-preview {
+  border: none;
+}
+
+/* line 950, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .sp-dd {
+  display: none;
+}
+
+/* Input:range */
+/* line 954, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range {
+  -webkit-appearance: none;
+  margin: 5px 0;
+  width: 100%;
+  position: relative;
+  vertical-align: top;
+}
+
+/* line 961, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range:focus {
+  outline: none;
+}
+
+/* line 964, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #D3D3D3;
+  border-radius: 2px;
+  border: 0 solid black;
+}
+
+/* line 973, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #424242;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+/* line 982, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range:focus::-webkit-slider-runnable-track {
+  background: #e0e0e0;
+}
+
+/* line 985, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #D3D3D3;
+  border-radius: 2px;
+  border: 0 solid black;
+}
+
+/* line 994, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #424242;
+  cursor: pointer;
+}
+
+/* line 1001, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 15px 0;
+  color: transparent;
+}
+
+/* line 1011, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-ms-fill-lower {
+  background: #c6c6c6;
+  border: 0 solid black;
+  border-radius: 4px;
+}
+
+/* line 1016, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-ms-fill-upper {
+  background: #D3D3D3;
+  border: 0 solid black;
+  border-radius: 4px;
+}
+
+/* line 1021, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range::-ms-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #424242;
+  cursor: pointer;
+}
+
+/* line 1028, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range:focus::-ms-fill-lower {
+  background: #D3D3D3;
+}
+
+/* line 1031, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type=range].fpd-input-range:focus::-ms-fill-upper {
+  background: #e0e0e0;
+}
+
+/* line 1034, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 2px 2px 0 0;
+}
+
+/* line 1039, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-dropdown {
+  border-radius: 2px;
+}
+
+/* line 1042, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-search {
+  margin: 6px 8px 7px;
+  padding: 0 !important;
+}
+
+/* line 1046, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-active,
+.fpd-module .fpd-dropdown {
+  border: 1px solid #D3D3D3 !important;
+}
+
+/* line 1050, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-search > input.fpd-dropdown-current {
+  width: 100%;
+  text-align: left;
+  cursor: text;
+  padding: 0 20px 0 5px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+/* line 1058, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-dropdown > .fpd-dropdown-current {
+  padding-left: 5px;
+}
+
+/* line 1061, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-active > input {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* line 1065, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-search > input:focus {
+  outline: none;
+}
+
+/* line 1068, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown > .fpd-dropdown-current > * {
+  display: inline-block;
+  padding-top: 4px;
+}
+
+/* line 1072, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown > .fpd-dropdown-arrow {
+  position: absolute;
+  right: 2px;
+  top: 5px;
+  opacity: 0.6;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+/* line 1086, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown > .fpd-dropdown-list {
+  display: none;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  bottom: 0;
+  background: #fff;
+  padding: 5px 0;
+  z-index: 100;
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  border-radius: 0 0 2px 2px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 1107, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-active > .fpd-dropdown-list,
+.fpd-dropdown.fpd-search > input:focus ~ .fpd-dropdown-list {
+  border: 1px solid #D3D3D3 !important;
+}
+
+/* line 1111, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-search.fpd-active > .fpd-dropdown-arrow,
+.fpd-dropdown.fpd-search > input:focus ~ .fpd-dropdown-arrow {
+  top: 3px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 1118, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-search > input:focus ~ .fpd-dropdown-list,
+.fpd-dropdown.fpd-active > .fpd-dropdown-list {
+  display: block !important;
+}
+
+/* line 1122, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown > .fpd-dropdown-list > *:first-child {
+  padding-top: 5px;
+}
+
+/* line 1125, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown-list > .fpd-item {
+  display: block;
+  text-align: left;
+  padding: 6px 5px;
+  line-height: 14px;
+  cursor: pointer;
+  color: rgba(66, 66, 66, 0.92);
+}
+
+/* line 1133, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown-list > .fpd-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 1136, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-on-loading .fpd-dropdown-arrow {
+  display: none !important;
+}
+
+/* line 1139, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-on-loading > input.fpd-dropdown-current {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMzJweCcgaGVpZ2h0PSczMnB4JyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgY2xhc3M9InVpbC1kZWZhdWx0Ij48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjA4MzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSg2MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuMTY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDkwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4yNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMTIwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC4zMzMzMzMzMzMzMzMzMzMzcycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgxNTAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjQxNjY2NjY2NjY2NjY2NjdzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDE4MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNXMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMjEwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC41ODMzMzMzMzMzMzMzMzM0cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PHJlY3QgIHg9JzQ2LjUnIHk9JzQwJyB3aWR0aD0nNycgaGVpZ2h0PScyMCcgcng9JzUnIHJ5PSc1JyBmaWxsPScjMDAwMDAwJyB0cmFuc2Zvcm09J3JvdGF0ZSgyNDAgNTAgNTApIHRyYW5zbGF0ZSgwIC0zMCknPiAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0nb3BhY2l0eScgZnJvbT0nMScgdG89JzAnIGR1cj0nMXMnIGJlZ2luPScwLjY2NjY2NjY2NjY2NjY2NjZzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDI3MCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuNzVzJyByZXBlYXRDb3VudD0naW5kZWZpbml0ZScvPjwvcmVjdD48cmVjdCAgeD0nNDYuNScgeT0nNDAnIHdpZHRoPSc3JyBoZWlnaHQ9JzIwJyByeD0nNScgcnk9JzUnIGZpbGw9JyMwMDAwMDAnIHRyYW5zZm9ybT0ncm90YXRlKDMwMCA1MCA1MCkgdHJhbnNsYXRlKDAgLTMwKSc+ICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSdvcGFjaXR5JyBmcm9tPScxJyB0bz0nMCcgZHVyPScxcycgYmVnaW49JzAuODMzMzMzMzMzMzMzMzMzNHMnIHJlcGVhdENvdW50PSdpbmRlZmluaXRlJy8+PC9yZWN0PjxyZWN0ICB4PSc0Ni41JyB5PSc0MCcgd2lkdGg9JzcnIGhlaWdodD0nMjAnIHJ4PSc1JyByeT0nNScgZmlsbD0nIzAwMDAwMCcgdHJhbnNmb3JtPSdyb3RhdGUoMzMwIDUwIDUwKSB0cmFuc2xhdGUoMCAtMzApJz4gIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9J29wYWNpdHknIGZyb209JzEnIHRvPScwJyBkdXI9JzFzJyBiZWdpbj0nMC45MTY2NjY2NjY2NjY2NjY2cycgcmVwZWF0Q291bnQ9J2luZGVmaW5pdGUnLz48L3JlY3Q+PC9zdmc+);
+}
+
+/* line 1145, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group {
+  background: #ededed;
+  border: 1px solid #D3D3D3 !important;
+  padding: 5px !important;
+  height: 35px;
+  border-radius: 2px;
+  position: relative;
+  margin-top: 10px !important;
+}
+
+/* line 1154, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group > * {
+  height: 100% !important;
+  float: left;
+  display: block !important;
+}
+
+/* line 1159, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group > span {
+  width: 20px;
+  padding-top: 5px;
+  text-align: center;
+  padding-right: 3px;
+}
+
+/* line 1165, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group > input {
+  width: 40px;
+  text-align: center;
+  font-size: 11px !important;
+  z-index: 1;
+  border: 1px solid #D3D3D3 !important;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* line 1177, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group > .fpd-range-wrapper {
+  width: calc(100% - 60px);
+}
+
+/* line 1180, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider,
+.fpd-range-slider__fill {
+  display: block;
+}
+
+/* line 1184, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider {
+  background: #fff;
+  border: 1px solid #D3D3D3;
+  position: relative;
+  border-left: none;
+}
+
+/* line 1190, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--horizontal {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 1194, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--vertical {
+  width: 20px;
+  min-height: 150px;
+  max-height: 100%;
+}
+
+/* line 1199, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--disabled {
+  opacity: 0.4;
+}
+
+/* line 1202, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider__fill {
+  position: absolute;
+}
+
+/* line 1205, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--horizontal .fpd-range-slider__fill {
+  top: 0;
+  height: 100%;
+}
+
+/* line 1209, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--vertical .fpd-range-slider__fill {
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 1213, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider__handle {
+  background: rgba(66, 66, 66, 0.92);
+  cursor: pointer;
+  display: inline-block;
+  width: 15px;
+  height: 100%;
+  position: absolute;
+  background-size: 100%;
+  border-radius: 2px;
+}
+
+/* line 1223, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider__handle:active {
+  opacity: 0.8;
+}
+
+/* line 1226, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--horizontal .fpd-range-slider__handle {
+  top: 0;
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+}
+
+/* line 1231, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-slider--vertical .fpd-range-slider__handle {
+  left: -10px;
+  touch-action: pan-x;
+  -ms-touch-action: pan-x;
+}
+
+/* line 1236, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+input[type="range"]:focus + .fpd-range-slider .fpd-range-slider__handle {
+  -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
+}
+
+/* line 1240, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar {
+  background: rgba(66, 66, 66, 0.92);
+  position: relative;
+  max-width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  padding: 0 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 1256, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toolbar-placement-inside-bottom.fpd-element-toolbar,
+.fpd-toolbar-placement-inside-top.fpd-element-toolbar {
+  width: 100% !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  left: 0 !important;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+/* line 1267, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toolbar-placement-inside-top.fpd-element-toolbar {
+  top: 0 !important;
+}
+
+/* line 1270, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toolbar-placement-inside-bottom.fpd-element-toolbar {
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+/* line 1274, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row {
+  display: inline-block;
+  position: relative;
+  padding: 6px 0 4px;
+}
+
+/* line 1279, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row:nth-child(3) {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: none;
+  border-right: none;
+}
+
+/* line 1284, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row:nth-child(2) {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* line 1287, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toolbar-placement-inside-bottom.fpd-element-toolbar > .fpd-row,
+.fpd-toolbar-placement-inside-top.fpd-element-toolbar > .fpd-row {
+  border: none !important;
+}
+
+/* line 1291, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row > div {
+  color: #fff;
+  font-size: 16px;
+  font-weight: lighter;
+  cursor: pointer;
+  padding: 6px 8px 7px;
+  text-align: right;
+  float: left;
+  line-height: 25px;
+  position: relative;
+}
+
+/* line 1302, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-text-size-tools > div:first-child,
+.fpd-text-random-tools > div:first-child {
+  padding-left: 0;
+}
+
+/* line 1306, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row > div.fpd-active {
+  background: #ffffff;
+  color: rgba(66, 66, 66, 0.92);
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 1313, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar.fpd-toolbar-placement-inside-bottom.fpd-element-toolbar > .fpd-row > div.fpd-active {
+  border-radius: 0 0 2px 2px;
+}
+
+/* line 1316, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row > div > span {
+  line-height: inherit;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+/* line 1325, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row *::-moz-selection:not(input) {
+  background: transparent;
+}
+
+/* line 1328, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row *::selection:not(input) {
+  background: transparent;
+}
+
+/* line 1331, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row > div.fpd-tooltip > span {
+  opacity: 0.6;
+}
+
+/* line 1334, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row > div.fpd-active > span,
+.fpd-element-toolbar > .fpd-row > div > span:hover {
+  opacity: 1;
+}
+
+/* line 1338, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-row input {
+  width: 35px;
+  height: 25px;
+  padding: 1px;
+  line-height: 1;
+  color: #000;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: top;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* line 1352, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-toggle.fpd-enabled > * {
+  opacity: 1 !important;
+}
+
+/* Sub Panel */
+/* line 1356, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar > .fpd-sub-panel {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #D3D3D3;
+  display: none;
+  border-top: none;
+  min-height: 50px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  -webkit-box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 10px;
+  max-width: none;
+}
+
+/* line 1372, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar.fpd-toolbar-placement-inside-bottom > .fpd-sub-panel {
+  margin-top: -38px;
+  border-bottom: none;
+  border-top: 1px solid #D3D3D3;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-box-shadow: 3px -3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px -3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 1382, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel > div {
+  display: none;
+  max-width: 100%;
+  width: 210px;
+}
+
+/* line 1387, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel > div > div {
+  margin-bottom: 15px;
+}
+
+/* line 1390, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel > div > div:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1393, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel > div.fpd-active {
+  display: block;
+}
+
+/* line 1396, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-panel-tabs > span {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+
+/* line 1403, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-panel-tabs > span.fpd-active {
+  border-bottom: 2px solid #D3D3D3;
+}
+
+/* line 1406, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-panel-tabs > span.fpd-disabled {
+  display: none;
+}
+
+/* line 1409, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-panel-tabs-content {
+  margin-top: 10px;
+}
+
+/* line 1412, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-panel-tabs-content > div {
+  display: none;
+}
+
+/* line 1415, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-panel-tabs-content > div.fpd-active {
+  display: block;
+}
+
+/* line 1418, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group {
+  margin-bottom: 10px;
+}
+
+/* line 1421, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group:last-child {
+  margin: 0;
+}
+
+/* line 1424, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group > span {
+  background: #ededed;
+  color: rgba(66, 66, 66, 0.92);
+  font-size: 18px;
+  padding: 8px;
+  margin-right: 5px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* line 1434, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group > span:nth-of-type(-n+4) {
+  margin-bottom: 5px;
+}
+
+/* line 1437, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group > span:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* line 1440, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-icon-button-group > span:hover {
+  opacity: 0.8;
+}
+
+/* Common Tools */
+/* line 1444, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar.fpd-toolbar-placement-inside-bottom .fpd-dropdown-list {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 0;
+  bottom: auto;
+  -webkit-box-shadow: 3px -3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 3px -3px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 2px 2px;
+}
+
+/* line 1454, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar .fpd-current-fill {
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  width: 20px;
+  height: 20px;
+  background: #ff7777;
+  border-radius: 2px;
+  margin-top: 3px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  opacity: 1 !important;
+}
+
+/* line 1465, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-panel-fill {
+  width: 194px;
+}
+
+/* line 1468, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-color-picker {
+  margin-bottom: 10px;
+}
+
+/* line 1471, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-slider-group > .fpd-icon-transparency {
+  padding-left: 5px;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* line 1477, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-panel-position {
+  width: 175px;
+}
+
+/* line 1480, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-tool-scaleX {
+  margin-bottom: 5px;
+}
+
+/* line 1483, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-tool-uniscaling-locker {
+  display: none;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+}
+
+/* line 1491, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-tool-uniscaling-locker:before,
+.fpd-sub-panel .fpd-tool-uniscaling-locker:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 40%;
+  height: 1px;
+  background: #D3D3D3;
+}
+
+/* line 1501, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-tool-uniscaling-locker:after {
+  right: 0;
+  left: auto;
+}
+
+/* line 1505, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-tool-scaleY {
+  margin-top: 5px;
+}
+
+/* Text Tools */
+/* line 1509, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar .fpd-tool-font-family {
+  width: 220px;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 11px !important;
+  border-radius: 2px;
+}
+
+/* line 1516, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-element-toolbar .fpd-tool-font-family.fpd-active {
+  background: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 1521, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tool-font-family > span {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8) !important;
+  border-radius: 2px;
+  width: 100% !important;
+  text-align: left !important;
+  padding: 0 7px;
+}
+
+/* line 1529, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tool-font-family > .fpd-dropdown-arrow {
+  right: 2px;
+  top: 2px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* line 1535, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-row.fpd-text-random-tools > div {
+  padding-right: 5px;
+}
+
+/* line 1538, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel .fpd-panel-text-align {
+  width: 30px;
+}
+
+/* line 1541, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sub-panel > .fpd-panel-edit-text {
+  width: 245px;
+}
+
+/* line 1544, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-tool-text-align .fpd-dropdown-arrow {
+  right: 5px;
+  bottom: 0;
+  top: auto;
+}
+
+/* line 1549, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dropdown.fpd-tool-text-align .fpd-item {
+  text-align: center;
+}
+
+/* line 1552, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-panel-edit-text > textarea {
+  border: 1px solid #D3D3D3;
+  padding: 5px;
+  font-size: 12px;
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+/* line 1560, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-icon-curved-text-reverse {
+  font-size: 18px;
+}
+
+/* PATTERNS & COLOR PALETTE & FILTERS */
+/* line 1564, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-patterns > .fpd-grid,
+.fpd-filters > .fpd-grid,
+.fpd-color-picker > .fpd-color-palette {
+  height: auto;
+  max-height: 42px;
+  overflow: auto;
+}
+
+/* line 1571, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-patterns > .fpd-grid > .fpd-item,
+.fpd-filters > .fpd-grid > .fpd-item,
+.fpd-color-picker > .fpd-color-palette > .fpd-item {
+  border: 1px solid #D3D3D3;
+  width: 19px;
+  height: 19px;
+  margin: 0 2px 2px 0;
+  min-height: inherit;
+}
+
+/* line 1580, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-filters > .fpd-grid > .fpd-item {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px 0 0;
+}
+
+/* COLORPICKER */
+/* line 1586, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-container {
+  background: #ededed !important;
+  border-color: #D3D3D3 !important;
+  padding: 10px !important;
+}
+
+/* line 1591, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-container * {
+  outline: none !important;
+}
+
+/* line 1594, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-picker-container {
+  border-left: none !important;
+}
+
+/* line 1597, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-input-container > input {
+  height: 27px;
+}
+
+/* line 1600, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-color,
+.sp-hue {
+  border: #DADADA !important;
+}
+
+/* line 1604, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-slider {
+  border: none !important;
+  height: 5px !important;
+}
+
+/* line 1608, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker .sp-dd {
+  display: none !important;
+}
+
+/* line 1611, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-initial {
+  border: 1px solid #D3D3D3 !important;
+}
+
+/* line 1614, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-input {
+  border: 1px solid #D3D3D3 !important;
+  background: #fff !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 1620, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-fill {
+  padding-top: 80% !important;
+}
+
+/* line 1623, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-input-container {
+  margin-left: 10px !important;
+}
+
+/* General */
+/* line 1627, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker .sp-replacer {
+  border: 1px solid #D3D3D3;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1633, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker .sp-preview {
+  border: none;
+  height: 18px;
+  width: 100%;
+}
+
+/* line 1638, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker.fpd-colorpicker-group .sp-replacer {
+  width: 21px;
+  margin: 0 2px 2px 0;
+}
+
+/* line 1642, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker.fpd-colorpicker-group input {
+  display: none !important;
+}
+
+/* line 1645, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-palette-container {
+  border: none !important;
+}
+
+/* line 1648, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-container {
+  display: table;
+  padding: 10px;
+  max-width: 220px;
+}
+
+/* line 1653, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-container > * {
+  float: none;
+}
+
+/* line 1656, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-picker-container {
+  display: table-header-group;
+}
+
+/* line 1659, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-palette-container {
+  display: table-footer-group;
+}
+
+/* line 1662, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-palette {
+  margin-top: 5px;
+}
+
+/* line 1665, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-input-container {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+/* line 1669, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-palette .sp-thumb-el {
+  border-color: #D3D3D3;
+}
+
+/* line 1672, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-palette .sp-thumb-el:hover,
+.sp-palette .sp-thumb-el.sp-thumb-active {
+  border-color: rgba(66, 66, 66, 0.92);
+}
+
+/* line 1676, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.sp-sat {
+  left: -1px;
+}
+
+/*.sp-cancel,
+.sp-cancel:hover {
+	background: #d93f3f;
+	color: #fff !important;
+	text-decoration: none !important;
+	padding: 5px 6px;
+	line-height: 1;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.sp-choose {
+	text-shadow: none !important;
+	background-image: none !important;
+	border: none !important;
+	border-radius: 2px !important;
+}*/
+/* line 1696, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-picker .sp-cancel,
+.fpd-color-picker .sp-choose,
+.sp-palette-row-selection {
+  display: none !important;
+}
+
+/* line 1701, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-mainbar .fpd-content {
+  background: #fff;
+}
+
+/* line 1704, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-mainbar .fpd-close-off-canvas {
+  display: none;
+}
+
+/* Top Bar */
+/* line 1708, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar .fpd-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+}
+
+/* line 1714, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar .fpd-navigation > div {
+  height: 100%;
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 1721, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar .fpd-navigation > div > span {
+  line-height: 65px;
+  font-size: 26px;
+}
+
+/* line 1725, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar .fpd-navigation > div > .fpd-label {
+  font-size: 15px;
+  padding-left: 5px;
+  vertical-align: top;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* line 1732, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar .fpd-mainbar > .fpd-content {
+  display: none;
+}
+
+/* Top Bar - Off Canvas */
+/* line 1736, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-topbar[class*="fpd-off-canvas-"] {
+  overflow: hidden;
+}
+
+/* line 1739, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar[class*="fpd-off-canvas-"] .fpd-mainbar .fpd-content {
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  top: 65px;
+  display: block;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* line 1750, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar[class*="fpd-off-canvas-left"] .fpd-mainbar .fpd-content {
+  left: -350px;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+/* line 1755, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar[class*="fpd-off-canvas-left"] .fpd-mainbar.fpd-show .fpd-content {
+  left: 0;
+}
+
+/* line 1758, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar[class*="fpd-off-canvas-right"] .fpd-mainbar .fpd-content {
+  right: -350px;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+/* line 1763, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-topbar[class*="fpd-off-canvas-right"] .fpd-mainbar.fpd-show .fpd-content {
+  right: 0;
+}
+
+/* line 1766, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-topbar[class*="fpd-off-canvas-"] .fpd-close-off-canvas {
+  display: block;
+  position: absolute;
+  top: 102px;
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 100;
+  cursor: pointer;
+  border: 1px solid;
+  -webkit-transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 300ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* line 1782, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container[class*="fpd-off-canvas-left"] .fpd-close-off-canvas {
+  left: -50px;
+  border-left: none !important;
+}
+
+/* line 1786, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container[class*="fpd-off-canvas-left"] .fpd-mainbar.fpd-show > .fpd-close-off-canvas {
+  left: 299px;
+}
+
+/* line 1789, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container[class*="fpd-off-canvas-right"] .fpd-close-off-canvas {
+  right: -50px;
+  border-right: none !important;
+}
+
+/* line 1793, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container[class*="fpd-off-canvas-right"] .fpd-mainbar.fpd-show > .fpd-close-off-canvas {
+  right: 299px;
+}
+
+/* Side Bar */
+/* line 1797, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  min-height: 500px;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+/* line 1807, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar > .fpd-mainbar {
+  height: 100%;
+  width: 300px;
+  background: #fff;
+  border-right-width: 1px;
+  border-right-style: solid;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  overflow: hidden;
+}
+
+/* line 1818, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar > .fpd-mainbar > .fpd-content {
+  height: 100%;
+}
+
+/* line 1821, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar.fpd-tabs-top > .fpd-mainbar > .fpd-content {
+  height: calc(100% - 50px);
+}
+
+/* line 1824, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar.fpd-sidebar-right > .fpd-mainbar {
+  border: none;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+/* line 1829, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar.fpd-sidebar-right > .fpd-mainbar {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+/* line 1834, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-sidebar .fpd-navigation .fpd-label {
+  display: none;
+}
+
+/* Main Bar Container */
+/* line 1838, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-main-bar-container .fpd-mainbar {
+  height: 500px !important;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 1843, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-main-bar-container .fpd-navigation {
+  overflow-x: auto;
+}
+
+/* Navigation */
+/* line 1847, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-navigation {
+  color: #fff;
+}
+
+/* line 1850, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-navigation > div {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0;
+  padding: 11px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 1860, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-navigation > div:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 1863, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-navigation > div.fpd-active {
+  background: #fff;
+}
+
+/* line 1866, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-navigation > div > span {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Tabs Top */
+/* line 1871, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-top .fpd-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 1876, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-top .fpd-navigation > div {
+  height: 50px;
+}
+
+/* Tabs Side */
+/* line 1880, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-navigation {
+  height: 100%;
+  width: 50px;
+  float: left;
+}
+
+/* line 1885, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-sidebar-right.fpd-tabs-side .fpd-navigation {
+  float: right;
+}
+
+/* line 1888, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-navigation > div:first-child {
+  margin-top: 0;
+}
+
+/* line 1891, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-navigation > div > span {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+/* line 1895, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-navigation > div > span {
+  font-size: 28px;
+}
+
+/* line 1898, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-mainbar > .fpd-content {
+  float: left;
+  width: calc(100% - 50px);
+}
+
+/* line 1902, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar.fpd-tabs-side .fpd-mainbar > .fpd-navigation.fpd-hidden + .fpd-content {
+  width: 100%;
+}
+
+/* Content */
+/* line 1906, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content > div {
+  display: none;
+}
+
+/* line 1909, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content > div.fpd-active {
+  display: block;
+}
+
+/* line 1912, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar .fpd-navigation.fpd-hidden ~ .fpd-content {
+  width: 100%;
+}
+
+/* DRAGGABLE DIALOG */
+/* line 1916, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-draggable-dialog {
+  display: none;
+  width: 350px;
+  height: 450px;
+  margin-top: 5px;
+  background: #fff;
+  position: absolute !important;
+  left: calc(50% - 175px);
+  top: calc(45% - 200px);
+  min-width: 200px;
+  min-height: 100px;
+  z-index: 1000000;
+  border-radius: 2px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* line 1932, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-draggable-dialog.fpd-active {
+  display: block;
+}
+
+/* line 1935, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-draggable-dialog > .fpd-dialog-head {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  font-size: 15px;
+  padding: 0 0 0 12px;
+  cursor: move;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 1947, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-dialog-head * {
+  line-height: 40px;
+}
+
+/* line 1950, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dialog-head .fpd-dialog-drag-handle {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* line 1956, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dialog-drag-handle .fpd-dialog-title {
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+/* line 1960, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dialog-head .fpd-close-dialog {
+  padding: 0 12px;
+  text-align: right;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+/* line 1968, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-dialog-head .fpd-close-dialog:hover {
+  opacity: 1;
+}
+
+/* line 1971, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-draggable-dialog .fpd-content {
+  height: calc(100% - 40px);
+}
+
+/* Secondary Module */
+/* line 1975, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-secondary-module > div {
+  display: none;
+  height: 100%;
+}
+
+/* line 1979, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-secondary-module > div.fpd-active {
+  display: block;
+}
+
+/* Module Top Nav */
+/* line 1983, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-bottom-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  top: auto;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+/* line 1997, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bottom-nav > div {
+  padding-top: 10px;
+}
+
+/* line 2000, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bottom-nav > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+/* line 2006, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bottom-nav > div:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 2009, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bottom-nav > div.fpd-active {
+  background: #fff;
+}
+
+/* Upload Zone */
+/* line 2013, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone-adds-panel .fpd-upload-zone-content {
+  height: calc(100% - 40px);
+}
+
+/* line 2016, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone-content > div {
+  display: none;
+}
+
+/* line 2019, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone-content > div.fpd-active {
+  display: block;
+}
+
+/* Saved Designs */
+/* line 2023, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-secondary-module .fpd-saved-designs-panel {
+  margin: 0 10px;
+}
+
+/* line 2026, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-saved-designs-panel .fpd-item:hover .fpd-remove-design {
+  display: block;
+}
+
+/* line 2029, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-saved-designs-panel .fpd-remove-design {
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 0;
+}
+
+/* line 2036, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-saved-designs-panel .mCSB_outside + .mCSB_scrollTools {
+  right: -10px;
+}
+
+/* line 2039, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-selection {
+  position: absolute;
+  z-index: 20;
+}
+
+/* line 2043, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-selection > .fpd-item {
+  width: 60px;
+  height: 70px;
+  background: #FAFAFA;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* line 2051, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-selection > .fpd-item > picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+/* line 2057, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-selection .fpd-item:last-child {
+  margin: 0 !important;
+}
+
+/* line 2060, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-selection .fpd-view-active {
+  background: #f5f5f5;
+}
+
+/* Inside */
+/* line 2064, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-top .fpd-views-selection {
+  top: 15px;
+  left: 15px;
+}
+
+/* line 2068, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-right .fpd-views-selection {
+  top: 15px;
+  right: 15px;
+}
+
+/* line 2072, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-bottom .fpd-views-selection {
+  bottom: 15px;
+  right: 15px;
+}
+
+/* line 2076, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-left .fpd-views-selection {
+  bottom: 15px;
+  left: 15px;
+}
+
+/* line 2080, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-top.fpd-views-centered .fpd-views-selection,
+.fpd-views-inside-bottom.fpd-views-centered .fpd-views-selection {
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 2088, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-left.fpd-views-centered .fpd-views-selection,
+.fpd-views-inside-right.fpd-views-centered .fpd-views-selection {
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 2096, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-top .fpd-views-selection .fpd-item,
+.fpd-views-inside-bottom .fpd-views-selection .fpd-item {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+/* line 2101, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-views-inside-left .fpd-views-selection .fpd-item,
+.fpd-views-inside-right .fpd-views-selection .fpd-item {
+  margin: 0 0 10px;
+}
+
+/* Outside */
+/* line 2106, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-views-outside ~ .fpd-views-selection {
+  position: static;
+  margin: 20px 0 0;
+}
+
+/* line 2110, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container.fpd-views-outside ~ .fpd-views-selection > div {
+  width: 100px;
+  height: 120px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+/* line 2116, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper {
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 2120, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn {
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  -webkit-box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+  box-shadow: 0 1px 1px rgba(90, 90, 90, 0.1);
+  border-radius: 1px;
+  margin-right: 10px;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+/* line 2138, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn:last-child {
+  margin: 0;
+}
+
+/* line 2141, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn:hover,
+.fpd-actions-wrapper > .fpd-action-btn.fpd-active {
+  color: #fff;
+}
+
+/* line 2145, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn > span {
+  line-height: 24px;
+}
+
+/* line 2148, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper > .fpd-action-btn.fpd-disabled {
+  opacity: 1 !important;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Top */
+/* line 2153, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper.fpd-pos-top {
+  top: 15px;
+  left: 15px;
+}
+
+/* Bottom */
+/* line 2158, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper.fpd-pos-bottom {
+  bottom: 15px;
+  left: 15px;
+}
+
+/* line 2162, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-top-actions-centered .fpd-actions-wrapper.fpd-pos-top,
+.fpd-bottom-actions-centered .fpd-actions-wrapper.fpd-pos-bottom {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* Right */
+/* line 2170, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper.fpd-pos-right {
+  top: 15px;
+  right: 15px;
+}
+
+/* Left */
+/* line 2175, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper.fpd-pos-left {
+  left: 15px;
+  top: 15px;
+}
+
+/* line 2179, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-actions-wrapper.fpd-pos-right > .fpd-action-btn,
+.fpd-actions-wrapper.fpd-pos-left > .fpd-action-btn {
+  display: block;
+  margin: 0 0 10px;
+}
+
+/* line 2184, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-left-actions-centered .fpd-actions-wrapper.fpd-pos-left,
+.fpd-right-actions-centered .fpd-actions-wrapper.fpd-pos-right {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Download */
+/* line 2192, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-action-btn[data-action="download"] {
+  overflow: none;
+}
+
+/* line 2195, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-action-btn[data-action="download"] .fpd-dropdown-list {
+  width: 50px;
+}
+
+/* line 2198, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-action-btn[data-action="download"] .fpd-item {
+  padding: 5px 0;
+  font-size: 28px;
+}
+
+/* QR-Code */
+/* line 2203, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-qrcode > input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* line 2207, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-qrcode {
+  text-align: center;
+}
+
+/* line 2210, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-qrcode-colors {
+  margin-bottom: 30px;
+}
+
+/* line 2213, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-qrcode-colors .fpd-spectrum-replacer {
+  background: #f5f5f5;
+  border: none;
+}
+
+/* line 2217, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-qrcode-colors .fpd-spectrum-replacer .sp-preview {
+  margin: 0;
+}
+
+/* line 2220, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-qrcode-colors .fpd-spectrum-replacer .sp-dd {
+  display: none;
+}
+
+/* Zoom */
+/* line 2224, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-zoom-tooltip .fpd-tooltip-content {
+  width: 150px;
+  height: 20px;
+}
+
+/* line 2228, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-zoom-tooltip .fpd-tooltip-content > .fpd-range-slider {
+  width: 80%;
+  border-left: 1px solid #D3D3D3;
+  float: left;
+}
+
+/* line 2233, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-zoom-tooltip .fpd-tooltip-content > .fpd-stage-pan {
+  font-size: 16px;
+  float: right;
+  padding: 2px 0 0;
+  cursor: pointer;
+}
+
+/* Misc */
+/* line 2240, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-action-btn .fpd-info-content,
+.fpd-action-btn .fpd-modal-qrcode {
+  display: none;
+}
+
+/* line 2244, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 2247, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container .fpd-image-editor-menu {
+  display: block;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* line 2252, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-menu > span {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* line 2258, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-menu > span.fpd-active {
+  color: #1a1a1a;
+  background: #fff;
+}
+
+/* line 2262, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container > .fpd-image-editor-main {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 2266, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container > .fpd-tab-content {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+/* line 2270, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tab-content > div {
+  display: none;
+}
+
+/* line 2273, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-tab-content > div.fpd-active {
+  display: block;
+}
+
+/* line 2276, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-mask > .fpd-mask-tools {
+  display: none;
+}
+
+/* line 2279, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-mask.fpd-show-secondary .fpd-mask-selection {
+  display: none;
+}
+
+/* line 2282, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-mask.fpd-show-secondary .fpd-mask-tools {
+  display: inline-block;
+}
+
+/* line 2285, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-mask-selection > span {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  vertical-align: top;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 50%;
+}
+
+/* line 2299, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-mask-selection > span > [class^="fpd-icon-"] {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+/* line 2303, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-mask-tools .fpd-btn {
+  line-height: 18px;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0 5px 0 0 !important;
+}
+
+/* line 2309, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-filters > div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* line 2320, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-remove-color .sp-replacer {
+  height: 35px;
+  width: 35px;
+  float: left;
+}
+
+/* line 2325, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-remove-color .sp-preview {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 2329, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-remove-color .fpd-btn {
+  margin: 0;
+  height: 35px;
+  border-radius: 0 2px 2px 0;
+}
+
+/* line 2334, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-color-manipulation > div {
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+/* line 2338, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-color-manipulation .fpd-switch-container {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+/* line 2342, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-color-manipulation .fpd-range-tooltip {
+  pointer-events: none;
+  opacity: 0.5;
+  position: relative;
+  margin-top: 5px;
+}
+
+/* line 2348, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-color-manipulation .fpd-range-tooltip.fpd-enabled {
+  pointer-events: inherit;
+  opacity: 1;
+}
+
+/* line 2352, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-tooltip > span {
+  font-size: 10px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 2357, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-tooltip .fpd-tooltip {
+  display: none;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 8px 7px 6px;
+  z-index: 10000;
+  white-space: nowrap;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* line 2377, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-range-tooltip.fpd-moving .fpd-tooltip {
+  display: block;
+}
+
+/* line 2380, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container .fpd-image-editor-main {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: url(data:image/png;base64,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);
+}
+
+/* line 2385, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-image-editor-container .fpd-action-buttons {
+  padding: 20px;
+}
+
+/* line 2388, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-mode-active .fpd-element-toolbar,
+.fpd-modal-mode-active .fpd-draggable-dialog {
+  display: none !important;
+}
+
+/* MODAL */
+/* line 2393, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-overlay {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  overflow: auto;
+  display: none;
+}
+
+/* line 2405, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-internal.fpd-modal-overlay {
+  z-index: 1000000;
+}
+
+/* line 2408, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-overlay > .fpd-modal-wrapper {
+  background: #fff;
+  width: 450px;
+  min-height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  padding: 40px;
+  z-index: 10020;
+  max-width: 100%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2424, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-overlay.fpd-fullscreen > .fpd-modal-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+/* line 2430, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-wrapper > .fpd-modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+/* line 2440, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-wrapper > .fpd-modal-close:hover {
+  opacity: 1;
+}
+
+/* line 2443, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-wrapper > .fpd-modal-content {
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 22px;
+  margin-top: 20px;
+  word-break: break-word;
+}
+
+/* line 2449, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-content * {
+  max-width: 100%;
+}
+
+/* line 2452, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-content input[type="text"] {
+  padding: 10px 5px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+}
+
+/* line 2457, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-content input:focus {
+  outline: none;
+}
+
+/* line 2460, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-content .fpd-btn {
+  background: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 4px 12px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+/* line 2472, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-content .fpd-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Types */
+/* line 2476, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-internal[data-type="prompt"] input {
+  width: 100%;
+  display: block;
+}
+
+/* line 2480, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-internal[data-type="prompt"] {
+  text-align: center;
+}
+
+/* line 2483, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-internal[data-type="confirm"] {
+  text-align: center;
+}
+
+/* line 2486, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-internal .fpd-confirm-msg {
+  margin-bottom: 10px;
+}
+
+/* Modal Product Designer */
+/* line 2490, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-product-designer.fpd-modal-overlay > .fpd-modal-wrapper {
+  padding: 60px 40px 40px;
+}
+
+/* line 2493, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-modal-product-designer.fpd-modal-overlay .fpd-done {
+  margin: 20px 0 0;
+  color: #fff;
+}
+
+/* Thumbnail Preview */
+/* line 2498, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-thumbnail-preview {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+/* line 2511, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-thumbnail-preview.fpd-title-enabled {
+  padding-bottom: 30px;
+}
+
+/* line 2514, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-thumbnail-preview > picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 2522, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-thumbnail-preview > .fpd-preview-title {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* line 2530, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-thumbnail-preview > .fpd-preview-price {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2px 5px 2px 7px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* line 2538, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-module {
+  height: 100%;
+  position: relative;
+}
+
+/* line 2542, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module > :first-child {
+  margin-top: 0;
+}
+
+/* Tabs */
+/* line 2546, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-module-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ecf0f1;
+  color: #7f8c8d;
+}
+
+/* line 2553, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module-tabs > div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 20px;
+}
+
+/* line 2562, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module-tabs > div:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 2565, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module-tabs > div.fpd-active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 2568, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module-tabs-content {
+  height: 100%;
+}
+
+/* line 2571, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module-tabs-content > div {
+  display: none;
+  height: 100%;
+}
+
+/* line 2575, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-sidebar .fpd-module-tabs {
+  top: 50px;
+}
+
+/* Inputs */
+/* line 2579, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-module input {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Dropdowns */
+/* line 2584, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-dropdown {
+  height: 30px;
+}
+
+/* line 2587, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-dropdown input {
+  height: 100%;
+}
+
+/* line 2590, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-dropdown > .fpd-dropdown-arrow {
+  top: 5px;
+}
+
+/* line 2593, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11px;
+}
+
+/* line 2597, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="text"] {
+  padding: 10px;
+}
+
+/* Uploads */
+/* line 2601, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="upload"] form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 2605, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="upload"] .fpd-upload-zone {
+  border: 2px dashed #ecf0f1;
+  color: #7f8c8d;
+  margin: 10px 5%;
+  width: 90%;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* line 2615, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone.fpd-hover {
+  opacity: 0.5;
+}
+
+/* line 2618, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 2628, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="upload"] .fpd-input-image {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 2634, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone > div > span {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* line 2639, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone > div > span:first-child {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+/* line 2643, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-upload-zone > div > span:last-child {
+  opacity: 0.7;
+}
+
+/* line 2646, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="upload"] .fpd-scroll-area {
+  height: calc(100% - 136px);
+  padding: 0 10px;
+}
+
+/* Facebook */
+/* line 2651, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-head .fpd-facebook-login {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* line 2655, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-head .fpd-facebook-albums {
+  margin: 10px;
+}
+
+/* line 2658, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-facebook-logged-in .fpd-facebook-login {
+  display: none;
+}
+
+/* line 2661, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-facebook-albums,
+.fpd-module-tabs-content [data-context="facebook"] .fpd-scroll-area {
+  display: none;
+}
+
+/* line 2665, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-facebook-logged-in .fpd-facebook-albums,
+.fpd-facebook-logged-in [data-context="facebook"] .fpd-scroll-area {
+  display: block;
+}
+
+/* line 2669, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="facebook"] .fpd-scroll-area {
+  height: calc(100% - 86px);
+  padding: 0 10px;
+}
+
+/* Instagram */
+/* line 2674, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="instagram"] .fpd-head {
+  margin: 0;
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+}
+
+/* line 2679, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="instagram"] .fpd-module-tabs > div {
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 0;
+}
+
+/* line 2685, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="instagram"] .fpd-module-tabs > div.fpd-active {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 2688, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-context="instagram"] .fpd-scroll-area {
+  height: calc(100% - 38px);
+  padding: 0 10px;
+}
+
+/* line 2692, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"] .fpd-head {
+  border-radius: 0 0 2px 2px;
+  display: none;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* line 2697, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"].fpd-head-visible .fpd-head {
+  display: block;
+}
+
+/* line 2700, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"] .fpd-head > .fpd-category-title-search {
+  width: calc(100% - 60px);
+  float: left;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 35px;
+  height: 35px;
+  position: relative;
+}
+
+/* line 2709, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-category-title-search > .fpd-toggle-search {
+  color: #7f8c8d;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 2720, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"].fpd-categories-active .fpd-toggle-search {
+  display: none;
+}
+
+/* line 2723, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"].fpd-categories-active .fpd-category-title {
+  left: 5px;
+}
+
+/* line 2726, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-category-title-search > .fpd-category-title {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 2734, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-category-title-search > .fpd-search {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+/* line 2741, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-category-title-search.fpd-search-active > .fpd-search {
+  display: block;
+  padding: 2px;
+  border: none !important;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  z-index: 10;
+}
+
+/* line 2751, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"] .fpd-back {
+  float: right;
+  margin: 0;
+  width: auto;
+  padding: 6px;
+  font-size: 18px;
+  border-radius: 0;
+  background: transparent !important;
+  color: #7f8c8d;
+}
+
+/* line 2761, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="designs"].fpd-head-visible .fpd-scroll-area {
+  height: calc(100% - 35px);
+}
+
+/* line 2764, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-products-module-hidden div[data-module="products"] {
+  display: none !important;
+}
+
+/* line 2767, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-module="products"] .fpd-product-categories {
+  display: none;
+}
+
+/* line 2770, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-module="products"].fpd-categories-enabled .fpd-product-categories {
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 2774, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+[data-module="products"].fpd-categories-enabled .fpd-scroll-area {
+  height: calc(100% - 42px);
+}
+
+/* Manage Layers */
+/* line 2778, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-container .fpd-manage-layers-panel {
+  height: 100%;
+}
+
+/* line 2781, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 2785, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row input {
+  visibility: hidden !important;
+}
+
+/* line 2788, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 2795, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-0 {
+  width: 40px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  text-align: center;
+}
+
+/* line 2802, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-0 > .fpd-current-color {
+  cursor: pointer;
+  width: 100%;
+  height: 20px;
+  display: block;
+  border-radius: 2px;
+}
+
+/* line 2809, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 2813, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-1 textarea {
+  min-height: auto;
+  max-height: 30px;
+  width: 100%;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+/* line 2820, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-2 {
+  width: 80px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  text-align: right;
+}
+
+/* line 2827, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-2 > span {
+  padding-left: 3px;
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 2833, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-2 > span.fpd-icon-reorder {
+  cursor: move;
+}
+
+/* line 2836, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-2 > span:first-child {
+  padding: 0;
+}
+
+/* line 2839, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row > div.fpd-cell-2 > span:hover {
+  opacity: 1;
+}
+
+/* line 2842, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row.fpd-locked > div:nth-child(-n+2) {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* line 2846, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row .fpd-scroll-area {
+  display: none;
+  max-height: 100px;
+  overflow: auto;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  line-height: inherit;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+/* line 2857, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row .fpd-color-palette {
+  padding: 0px 10px;
+}
+
+/* line 2860, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row .fpd-color-palette .fpd-item,
+.fpd-manage-layers-panel .fpd-list-row .fpd-color-palette .sp-replacer {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px 4px 0;
+  min-height: inherit;
+  border-radius: 2px;
+}
+
+/* line 2868, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row .fpd-color-palette .sp-preview {
+  height: 100%;
+}
+
+/* line 2871, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-list-row .sp-replacer,
+.fpd-manage-layers-panel .fpd-list-row .sp-preview {
+  border: none !important;
+  border-radius: 2px;
+}
+
+/* line 2876, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .sp-dd {
+  display: none !important;
+}
+
+/* line 2879, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-manage-layers-panel .fpd-sortable-placeholder {
+  background: rgba(0, 0, 0, 0.05);
+  border-width: 2px;
+  border-style: dotted;
+  height: 65px;
+}
+
+/* line 2885, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-names-numbers-panel {
+  height: 100%;
+}
+
+/* line 2888, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-names-numbers-panel .fpd-list {
+  overflow-x: hidden !important;
+}
+
+/* line 2891, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-btn {
+  margin-left: 5px;
+}
+
+/* line 2894, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-list > .fpd-row {
+  -webkit-transition: background 300ms ease-out;
+  transition: background 300ms ease-out;
+}
+
+/* line 2898, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-list > .fpd-row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* line 2901, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 19px 5px 19px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 2908, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > div {
+  line-height: 32px;
+  height: 32px;
+}
+
+/* line 2912, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-number-col {
+  width: 50px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+/* line 2917, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-number-col > input {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: none;
+  vertical-align: top;
+}
+
+/* line 2923, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-name-col {
+  width: 100%;
+}
+
+/* line 2926, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-select-col {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+/* line 2930, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-select-col > label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  line-height: 30px;
+  padding: 0 12px 0 5px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-left: none !important;
+  background: transparent;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(147, 128, 108, 0.1);
+}
+
+/* line 2945, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-select-col > label:after {
+  content: "\e90e";
+  font-family: 'FontFPD' !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+/* line 2953, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-select-col select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  display: block;
+  height: auto;
+  height: 100%;
+  padding: 0;
+}
+
+/* line 2964, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-remove-col {
+  width: 35px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: auto;
+  padding-top: 2px;
+  padding-right: 4px;
+  text-align: right;
+  font-size: 18px;
+}
+
+/* line 2976, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row > .fpd-name-col input {
+  width: 100%;
+}
+
+/* line 2979, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row input {
+  padding: 5px;
+  height: 32px;
+  width: 100%;
+}
+
+/* line 2984, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row select {
+  outline: none !important;
+}
+
+/* line 2987, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row select::-ms-expand {
+  display: none;
+}
+
+/* line 2990, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-names-numbers-panel .fpd-row:first-child .fpd-remove-col {
+  display: none;
+}
+
+/* line 2993, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module[data-module="drawing"] {
+  padding: 10px;
+}
+
+/* line 2996, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-module .fpd-drawing-panel {
+  height: 100%;
+}
+
+/* line 2999, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-drawing-tools > div {
+  margin: 0 !important;
+}
+
+/* line 3002, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-drawing-tools > div.fpd-label {
+  margin-top: 10px !important;
+}
+
+/* line 3005, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-drawing-tools > div.fpd-label:first-child {
+  margin-top: 0 !important;
+}
+
+/* line 3008, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-toggle-drawing-label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  line-height: 16px;
+}
+
+/* line 3013, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-tools .sp-dd {
+  display: none;
+}
+
+/* line 3016, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-tools .sp-replacer,
+.fpd-drawing-tools .sp-preview {
+  width: 100%;
+  border: none !important;
+}
+
+/* line 3021, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-tools .fpd-slider-group {
+  background: none;
+}
+
+/* line 3024, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-tools .fpd-slider-group > .fpd-range-wrapper {
+  width: calc(100% - 40px);
+}
+
+/* line 3027, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-drawing-tools .fpd-buttons {
+  margin-top: 5px !important;
+}
+
+/* line 3030, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-drawing-panel .fpd-drawing-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+/* Tablets ----------- */
+@media (max-width: 767px) {
+  /* line 3036, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-topbar .fpd-navigation {
+    overflow-x: auto;
+  }
+
+  /* line 3039, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-hidden-tablets .fpd-container,
+  .fpd-hidden-tablets .fpd-done {
+    display: none !important;
+  }
+
+  /* line 3043, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-hidden-tablets .fpd-device-info {
+    display: block !important;
+  }
+}
+/* Smartphones  ----------- */
+@media (max-width: 568px) {
+  /* line 3049, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-topbar .fpd-navigation {
+    overflow-x: auto;
+  }
+
+  /* line 3052, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-container.fpd-topbar .fpd-main-wrapper > .fpd-product-stage {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 3059, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-topbar .fpd-navigation .fpd-label {
+    display: none;
+  }
+
+  /* line 3062, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-grid > .fpd-item {
+    height: 100px;
+  }
+
+  /* line 3065, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-draggable-dialog {
+    left: 0 !important;
+    margin-top: -1px;
+    width: calc(100% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  /* line 3073, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-draggable-dialog .fpd-icon-drag {
+    display: none;
+  }
+
+  /* line 3076, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-views-selection > .fpd-item {
+    height: 40px;
+    padding: 4px;
+    width: 30px;
+  }
+
+  /* line 3081, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-container.fpd-views-outside ~ .fpd-views-selection > div {
+    width: 50px;
+    height: 60px;
+  }
+
+  /* line 3085, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-modal-product-designer.fpd-modal-overlay > .fpd-modal-wrapper {
+    padding: 60px 20px 20px;
+  }
+
+  /* line 3088, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-modal-product-designer.fpd-modal-overlay .fpd-done {
+    left: 20px;
+  }
+
+  /* line 3091, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-hidden-smartphones .fpd-container,
+  .fpd-hidden-smartphones .fpd-done,
+  .fpd-thumbnail-preview {
+    display: none !important;
+  }
+
+  /* line 3096, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+  .fpd-hidden-smartphones .fpd-device-info {
+    display: block !important;
+  }
+}
+/* Portrait */
+/* line 3101, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection {
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 3105, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection .fpd-label {
+  display: none;
+}
+
+/* line 3108, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection > div {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+/* line 3118, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-color-selection > div:last-child {
+  margin-right: 0;
+}
+
+/* line 3121, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-main-wrapper > .fpd-color-selection > div:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* line 3126, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection.fpd-custom-pos {
+  margin: 20px 0;
+  position: static;
+}
+
+/* line 3130, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection.fpd-custom-pos > div {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+/* line 3141, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection.fpd-custom-pos > div > .fpd-label {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 4px 2px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 3154, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection .sp-replacer {
+  border: none;
+  padding: 0;
+}
+
+/* line 3158, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection .sp-preview {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* line 3163, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-color-selection .sp-dd {
+  display: none !important;
+}
+
+/* line 3166, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bulk-variations {
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  padding: 10px;
+  border-radius: 2px;
+  min-width: 250px;
+}
+
+/* Top Bar */
+/* line 3175, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bulk-variations > div:first-child {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+/* line 3179, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bulk-variations .fpd-title {
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 3184, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-bulk-variations .fpd-btn {
+  margin: 0;
+}
+
+/* List */
+/* line 3188, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 3199, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+/* line 3203, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div {
+  margin: 5px 30px 5px 0;
+  position: relative;
+}
+
+/* line 3207, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div:last-child {
+  margin-right: 5px;
+}
+
+/* line 3210, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: rgba(147, 128, 108, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 5px 5px 10px;
+}
+
+/* line 3219, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row select.fpd-error {
+  background: rgba(189, 8, 28, 0.05);
+  border-color: rgba(189, 8, 28, 0.2);
+}
+
+/* line 3223, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div.fpd-select-col select {
+  padding-right: 20px;
+  outline: none !important;
+  margin: 0 !important;
+  height: 32px;
+}
+
+/* line 3229, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div.fpd-select-col:after {
+  content: "\e90e";
+  font-family: 'FontFPD' !important;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 3240, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div > input {
+  height: 100%;
+  width: 70px;
+  padding: 8px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  margin: 0 !important;
+}
+
+/* line 3248, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div.fpd-remove-row {
+  line-height: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 3255, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row > div.fpd-remove-row:hover {
+  opacity: 1;
+}
+
+/* line 3258, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-variations-list > .fpd-row:first-child .fpd-remove-row {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ADDS */
+/* line 3263, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-add-text > .fpd-input-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* FACEBOOK & INSTAGRAM */
+/* line 3272, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-add-facebook-photo-wrapper .fpd-content-head,
+.fpd-add-instagram-photo-wrapper .fpd-content-head {
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+/* line 3277, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-add-facebook-photo-wrapper .fpd-content-main {
+  height: calc(29%);
+}
+
+/* line 3280, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-add-instagram-photo-wrapper .fpd-content-main {
+  height: calc(40%);
+}
+
+/* line 3283, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-add-instagram-photo-wrapper .fpd-insta-load-next {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  margin-left: -10px;
+  font-size: 20px;
+}
+
+/* PRODUCTS & DESIGNS */
+/* line 3291, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-products .fpd-content-main,
+.fpd-add-design-wrapper .fpd-content-main {
+  height: calc(48%);
+}
+
+/* line 3295, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-products.fpd-no-categories .fpd-content-head,
+.fpd-add-design-wrapper.fpd-no-categories .fpd-content-head {
+  display: none !important;
+}
+
+/* line 3299, /Users/pierreyfl/prelaunchr-master/app/assets/stylesheets/FancyProductDesigner.css */
+.fpd-content-products.fpd-no-categories .fpd-content-main,
+.fpd-add-design-wrapper.fpd-no-categories .fpd-content-main {
+  height: 100%;
+}

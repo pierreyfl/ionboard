@@ -11,13 +11,13 @@ Prelaunchr::Application.configure do
   config.eager_load = true
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
   # Compress JavaScripts and CSS
-  config.assets.compress = false
+  config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
   # Generate digests for assets URLs
-  config.assets.digest = false
+  config.assets.digest = true
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
