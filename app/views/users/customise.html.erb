@@ -53,10 +53,10 @@
 		    		boundingBox: "Base"
 		    	},
 		    	actions:  {
-					'top': ['download','print', 'snap', 'preview-lightbox'],
-					'right': ['magnify-glass', 'zoom', 'reset-product', 'qr-code', 'ruler'],
-					'bottom': ['undo','redo'],
-					'left': ['manage-layers','info','save','load']
+					'top': [],
+					'right': ['magnify-glass', 'zoom', 'reset-product', 'qr-code', 'ruler', 'undo','redo'],
+					'bottom': [],
+					'left': ['manage-layers','info','save','load', 'download','print', 'snap', 'preview-lightbox']
 				}
     		},
 
@@ -126,14 +126,15 @@
     });
   </script>
 </head>
-<body>
-    	<div id="main-container" style: "width: 100vw;">
-          	<div id="clothing-designer" class="fpd-container fpd-shadow-2 fpd-topbar fpd-tabs fpd-tabs-side fpd-top-actions-centered fpd-bottom-actions-centered fpd-views-inside-left">
+<body style="margin: 0px;">
+  <div class="header" style="background-color: black; padding-bottom: 60px;">
+  </div>
+    	<div id="main-container" style: "width: 100vw; margin: 0px auto; padding 0px;">
+          	<div id="clothing-designer" class="fpd-container fpd-shadow-2 fpd-topbar fpd-tabs fpd-tabs-side fpd-top-actions-centered fpd-bottom-actions-centered fpd-views-inside-centered" style="margin: auto; margin-top: 20px;">
           		
           		<div class="fpd-product" title="Ionboard" data-thumbnail="images/skateboard/preview.png">
-	    			<img src="images/skateboard/basic.png" title="Base" data-parameters='{"left": 332, "top": 311, "colors": "#D5D5D5,#990000,#cccccc", "price": 20}' />
-			  		<img src="images/skateboard/shadow.png" title="Hightlights" data-parameters='{"left": 332, "top": 311}' />
-			  		<img src="images/skateboard/shadow.png" title="Shadow" data-parameters='{"left": 332, "top": 311}' />
+
+			  		<img src="images/skateboard/skateboard-ori.png" title="Shadow" data-parameters='{"rotatable": true, "left": 600, "top": 311, "colors": "#000000","boundingBox": "Base", "zChangeable": true}' />
 				</div>
 				
 		  		<div class="fpd-design">
