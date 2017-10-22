@@ -15,14 +15,14 @@
   <meta property="og:url" content="<%= root_url %>"/>
   
 
-  
+
   <%= stylesheet_link_tag "customise", :media => "all" %>
   <%= javascript_include_tag "customise.js" %>
   <%= csrf_meta_tags %>
-  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js" crossorigin="anonymous"></script>
   <script type="text/javascript">
     jQuery(document).ready(function(){
-
     	var $yourDesigner = $('#clothing-designer'),
     		pluginOpts = {
 	    		stageWidth: 1200,
@@ -67,18 +67,22 @@
     	yourDesigner = new FancyProductDesigner($yourDesigner, pluginOpts);
       console.log(yourDesigner)
       $("#checkout-button").click(function() {
-        console.log(yourDesigner)
+        var email = $("#userInputEmail").val();
+        var order = $("#orderNumber").val();
         yourDesigner.getProductDataURL(function(dataURL) {
           $.ajax({
               type: "POST",
               url: "/orders",
-              data: {order: { base64_image: dataURL, name: "abc"}},
+              data: {order: { image_json: dataURL, email: email, order_number: order}},
               success: function(data) {
                 alert("Success");
                 console.log(dataURL);
                 return false;
               },
               error: function(data) {
+                data = data.responseJSON.error
+                alert(data);
+                console.log("Failed");
                 return false;
               }
             });
@@ -131,21 +135,23 @@
   </script>
 </head>
 <body style="margin: 0px;">
-  <div class="header" style="background-color: black; padding-bottom: 60px;">
+  <div class="header" style="background-color: black;">
+    <img src="images/skateboard/logo-ionboard.png" style="width:180px; padding: 30px;"></img>
   </div>
     	<div id="main-container" style: "width: 100vw; margin: 0px auto; padding 0px;">
           	<div id="clothing-designer" class="fpd-container fpd-shadow-2 fpd-topbar fpd-tabs fpd-tabs-side fpd-top-actions-centered fpd-bottom-actions-centered fpd-views-inside-centered" style="margin: auto; margin-top: 20px;">
           		
           		<div class="fpd-product" title="Ionboard" data-thumbnail="images/skateboard/preview.png">
 
-			  		<img src="images/skateboard/ionboard-test.png" title="Shadow" data-parameters='{"rotatable": true, "left": 600, "top": 311, "scale": 0.18, "topped": true}' />
-            <img src="images/skateboard/ionboard-handler.png" title="Shadow" data-parameters='{"rotatable": true, "left": 640, "top": 420, "scale": 0.15, "topped": true}' />
-            <img src="images/skateboard/logo-ionboard.png" title="Shadow" data-parameters='{"rotatable": true, "left": 640, "top": 200, "scale": 0.13, "topped": true}' />
+			  		<img src="images/skateboard/ionboard-test.png" title="Shadow" data-parameters='{"left": 600, "top": 311, "scale": 0.18, "topped": true}' />
+            <img src="images/skateboard/ionboard-handler.png" title="Shadow" data-parameters='{"left": 650, "top": 400, "scale": 0.18, "topped": true}' />
+            <img src="images/skateboard/logo-ionboard.png" title="Shadow" data-parameters='{"left": 651, "top": 209, "scale": 0.147, "topped": true}' />
+            <img src="images/skateboard/ionboard-board.png" title="Shadow" data-parameters='{"left": 600, "top": 311, "scale": 0.18,"colors": "#000000", "removable": true, "boundingBox": "Base", "autoSelect": true}' />
 				</div>
 				
 		  		<div class="fpd-design">
 		  			<div class="fpd-category" title="Swirls">
-			  			<img src="images/designs/swirl.png" title="Swirl" data-parameters='{"zChangeable": true, "left": 215, "top": 200, "colors": "#000000", "removable": true, "draggable": true, "rotatable": true, "resizable": true, "price": 10, "boundingBox": "Base", "autoCenter": true}' />
+			  			<img src="images/designs/swirl.png" title="Swirl" data-parameters='{"zChangeable": true, "left": 215, "top": 200, "colors": "#000000", "removable": true, "draggable": true, "rotatable": true, "resizable": true, "price": 10, "boundingBox": "Base", "autoCenter": true, "lockUniScaling": true}' />
 				  		<img src="images/designs/swirl2.png" title="Swirl 2" data-parameters='{"left": 215, "top": 200, "colors": "#000000", "removable": true, "draggable": true, "rotatable": true, "resizable": true, "price": 5, "boundingBox": "Base", "autoCenter": true}' />
 				  		<img src="images/designs/swirl3.png" title="Swirl 3" data-parameters='{"left": 215, "top": 200, "colors": "#000000", "removable": true, "draggable": true, "rotatable": true, "resizable": true, "autoCenter": true}' />
 				  		<img src="images/designs/heart_blur.png" title="Heart Blur" data-parameters='{"left": 215, "top": 200, "colors": "#bf0200", "removable": true, "draggable": true, "rotatable": true, "resizable": true, "price": 5, "boundingBox": "Base", "autoCenter": true}' />
@@ -165,15 +171,30 @@
 		  		</div>
 		  	</div>
 		  	<br />
-
-		  	<div class="fpd-clearfix" style="margin-top: 30px;">
-			  	<div class="api-buttons fpd-container fpd-left">
-				  	<a href="#" id="print-button" class="fpd-btn">Print</a>
-				  	<a href="#" id="image-button" class="fpd-btn">Create Image</a>
-				  	<a href="#" id="checkout-button" class="fpd-btn">Order</a>
-			  	</div>
-		  	</div>
-
+       
+        <div class="row" style="width:50%; margin: auto;">
+           <h3 style="text-align: center">Please fill in your information to place order</h3>
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="userInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Order Number</label>
+            <input type="text" class="form-control" id="orderNumber" placeholder="Your Kickstarter Order No.">
+          </div>
+  		  	<div class="fpd-clearfix" style="margin-top: 30px;">
+  			  	<div class="api-buttons fpd-container" style="text-align: center;">
+  				  	<a href="#" id="print-button" class="fpd-btn" style="text-decoration: none;">Print</a>
+  				  	<a href="#" id="image-button" class="fpd-btn" style="text-decoration: none;">Create Image</a>
+  				  	<a href="#" id="checkout-button" class="fpd-btn" style="text-decoration: none;">Order</a>
+  			  	</div>
+  		  	</div>
+          
+        </form>
+      </div>
+		  	
     	</div>
 
 <script>

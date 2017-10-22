@@ -11,6 +11,10 @@ Prelaunchr::Application.routes.draw do
   get 'refer-a-friend' => 'users#refer'
   get 'privacy-policy' => 'users#policy'
   get 'customise' => 'users#customise'
+  authenticate :admin_user do
+    get 'dashboard' => 'users#dashboard'
+  end
+  
   
   resources :users do
     member do

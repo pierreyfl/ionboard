@@ -85,6 +85,15 @@ class UsersController < ApplicationController
       format.html { render :layout => false } # your-action.html.erb
     end
   end
+  
+  def dashboard
+    
+    @order = Order.all
+    
+    respond_to do |format|
+      format.html { render :layout => false } # your-action.html.erb
+    end
+  end
 
   def redirect
     redirect_to root_path, status: 404
