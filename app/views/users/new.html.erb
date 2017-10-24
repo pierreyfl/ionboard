@@ -1,18 +1,3 @@
- <style>
-   body {
-     background-color: black;     
-   }
-   </style>
-   <div class="container">
-     <div style="position: absolute;">
-       <h5 >Hello</h5>
-     </div>
-        <div class="twentytwenty-container">
-          <%= image_tag("/assets/home/ionboardX.png") %>
-          <%= image_tag("/assets/home/ionboard-2.jpg") %>
-        </div>
-      </div>
-  
 
 
 <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
@@ -23,21 +8,3 @@
   <% end %>
 </div>
 
-    <script>
-      $(window).load(function() {
-        
-        $(".twentytwenty-container").twentytwenty({
-            default_offset_pct: 0.5, // How much of the before image is visible when the page loads
-            orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
-            before_label: 'ionboardX', // Set a custom before label
-            after_label: 'ionboard', // Set a custom after label
-            no_overlay: true, //Do not show the overlay with before and after
-            move_slider_on_hover: false, // Move slider on mouse hover?
-            move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
-            click_to_move: true // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
-          });
-
-      });
-      
-
-    </script>
