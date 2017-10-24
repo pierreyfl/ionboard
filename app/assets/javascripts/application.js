@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jquery.event.move.js
+//= require jquery.twentytwenty.js

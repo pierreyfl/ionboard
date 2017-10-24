@@ -79,6 +79,12 @@ class UsersController < ApplicationController
   def policy
   end
   
+  def demo
+    respond_to do |format|
+      format.html { render :layout => false } # your-action.html.erb
+    end
+  end
+  
   def customise
     
     respond_to do |format|
