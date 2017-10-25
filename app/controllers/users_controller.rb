@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => false } # your-action.html.erb
     end
   end
 

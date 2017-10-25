@@ -1,12 +1,184 @@
-<div class="hero">
-  <p class="large brandon"></p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
 
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-  <% if Rails.application.config.ended %>
-    <%= render "users/campaign_ended" %>
-  <% else %>
-    <%= render "users/campaign_ongoing" %>
-  <% end %>
-</div>
+    <head>
+        <meta charset="utf-8" />
+        <title>IONBOARD</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <%= stylesheet_link_tag "main", :media => "all" %>
+        <%= javascript_include_tag "main" %>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN: BASE PLUGINS  -->
+
+        <!-- END: BASE PLUGINS -->
+        <!-- BEGIN THEME STYLES -->
+        
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" /> </head>
+
+    <body class="c-layout-header-fixed c-layout-header-fullscreen">
+        <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
+        <!-- BEGIN: HEADER -->
+        <header class="c-layout-header c-layout-header-static c-header-transparent-dark" data-minimize-offset="80">
+            <div class="c-navbar">
+                <div class="container" style="margin-right: 0px !important;">
+                    <!-- BEGIN: BRAND -->
+                    <div class="c-navbar-wrapper clearfix" style="width: 100%;">
+                      
+                        <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-bold">
+                            <ul class="nav navbar-nav c-theme-nav">
+                                <li>
+                                    <a href="javascript:;" class="c-link" style="color: #ccc;">ionboard
+                                        <span class="c-arrow c-toggler"></span>
+                                    </a>
+                                  </li>
+                                <li>
+                                    <a href="javascript:;" class="c-link" style="color: #ccc;">ionboardX
+                                        <span class="c-arrow c-toggler"></span>
+                                    </a>
+                                  </li>
+                            </ul>
+                        </nav>
+                        <!-- END: MEGA MENU -->
+                        <!-- END: LAYOUT/HEADERS/MEGA-MENU -->
+                        <!-- END: HOR NAV -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END: HEADER -->
+        <!-- END: LAYOUT/HEADERS/HEADER-1 -->
+
+        <!-- BEGIN: PAGE CONTAINER -->
+        <div class="c-layout-page">
+            <!-- BEGIN: PAGE CONTENT -->
+            <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-8 -->
+            <div id="container1">
+              
+            </div>
+            
+            <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-8 -->
+            <!-- BEGIN: CONTENT/ISOTOPE/GRID-2 -->
+            <div class="c-content-box c-size-md c-bg-img-center" style="background-color: black;">
+                <div class="container">
+                    <div class="c-content-title-1">
+                        <h3 class="c-center c-font-uppercase" style="color: white;">Join Our Referral Program</h3>
+                        <div class="c-line-center" style="color: white; background-color: white;"></div>
+                        <p class="c-font-center" style="color: white">$50 OFF, First 10 Friends Joined</p>
+                    </div>
+                    <div class="col-md-12">
+                      
+                      <%= form_for @user, :url => { :action => "create" } do |f| %>
+                      <div class="input-group input-group-lg c-square">
+                        <%= f.text_field :email, :placeholder => "Your Email Here", :class => "form-control c-square c-font-grey-3 c-border-grey c-theme" %>
+                        <span class="input-group-btn">
+                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN">ENTER</>
+                        </span>
+                      </div>
+                      <% end %>
+                   
+                  </div>
+                   
+                </div>
+            </div>
+            <!-- END: CONTENT/ISOTOPE/GRID-2 -->
+            
+           
+        </div>
+        <!-- END: PAGE CONTAINER -->
+        <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-6 -->
+        <a name="footer"></a>
+        <footer class="c-layout-footer c-layout-footer-6" style="background-color: black;">
+
+            <div class="c-postfooter" style="background-color: black;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="c-copyright c-font-grey" style="text-align: center;">2017 &copy; Atlas Cloud, Inc.
+                                <span class="c-font-grey-3">All Rights Reserved.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
+        <!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
+        <div class="c-layout-go2top">
+            <i class="icon-arrow-up"></i>
+        </div>
+        <!-- END: LAYOUT/FOOTERS/GO2TOP -->
+        <!-- BEGIN: LAYOUT/BASE/BOTTOM -->
+        <!-- BEGIN: CORE PLUGINS -->
+        <!--[if lt IE 9]>
+	<script src="../assets/global/plugins/excanvas.min.js"></script> 
+	<![endif]-->
+      
+        <script>
+          
+          $( document ).ready(function() {
+            if ($(window).width() < 640) {
+              
+              
+              $("#container1").append("<img src='<%= asset_path('light.jpg') %>'><img src='<%= asset_path('light-2.jpg') %>'>");
+              
+              
+              var beforeImg = $("#container1").find("img:first");
+              var afterImg = $("#container1").find("img:last");
+              
+              beforeImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
+                  orientation: 'vertical', // Orientation of the before and after images ('horizontal' or 'vertical')
+                 before_label: 'January 2017', 
+                 after_label: 'March 2017',
+                 no_overlay: true,
+                 move_slider_on_hover: false,
+                 move_with_handle_only: false,
+                 click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.);
+            });});
+             
+              
+               
+          }
+            else {
+              
+              $("#container1").append("<img src='<%= asset_path('ionboardXX.png') %>'><img src='<%= asset_path('ionboard-2.jpg') %>'>");
+              
+              var beforeImg = $("#container1").find("img:first");
+              var afterImg = $("#container1").find("img:last");
+              
+              afterImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
+                  orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
+                 before_label: 'January 2017', 
+                 after_label: 'March 2017',
+                 no_overlay: true,
+                 move_slider_on_hover: false,
+                 move_with_handle_only: false,
+                 click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.);
+            });});
+            }
+          });
+          
+          
+          </script>
+        
+        <script>
+            $(document).ready(function()
+            {
+                App.init(); // init core    
+            });
+        </script>
+
+    </body>
+
+</html>
 

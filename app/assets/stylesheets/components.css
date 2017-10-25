@@ -8,11 +8,13 @@ General reset
 /* Set default body */
 body {
   color: #5c6873;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Avenir";
   padding: 0px !important;
   margin: 0px !important;
   font-weight: 300;
-  font-size: 17px; }
+  font-size: 17px;
+  background-color: black;
+ }
 
 a {
   outline: none !important;
