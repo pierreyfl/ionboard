@@ -43,8 +43,10 @@
                                     </a>
                                   </li>
                             </ul>
+                            
                         </nav>
                         <!-- END: MEGA MENU -->
+                        
                         <!-- END: LAYOUT/HEADERS/MEGA-MENU -->
                         <!-- END: HOR NAV -->
                     </div>
@@ -77,7 +79,7 @@
                       <div class="input-group input-group-lg c-square">
                         <%= f.text_field :email, :placeholder => "Your Email Here", :class => "form-control c-square c-font-grey-3 c-border-grey c-theme" %>
                         <span class="input-group-btn">
-                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN">ENTER</>
+                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN" style="background-color: grey; color: black;">ENTER</>
                         </span>
                       </div>
                       <% end %>
@@ -124,7 +126,7 @@
             if ($(window).width() < 640) {
               
               
-              $("#container1").append("<img src='<%= asset_path('light.jpg') %>'><img src='<%= asset_path('light-2.jpg') %>'>");
+              $("#container1").append("<a href='https://ionboardtech.com/ionboard'><img src='<%= asset_path('light.jpg') %>'></a><a href='https://ionboardtech.com/ionboardx'><img src='<%= asset_path('light-2.jpg') %>'></a>");
               
               
               var beforeImg = $("#container1").find("img:first");
@@ -132,8 +134,8 @@
               
               afterImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
                   orientation: 'vertical', // Orientation of the before and after images ('horizontal' or 'vertical')
-                 before_label: 'January 2017', 
-                 after_label: 'March 2017',
+                 before_label: 'ionboard X', 
+                 after_label: 'ionboard',
                  no_overlay: true,
                  move_slider_on_hover: false,
                  move_with_handle_only: false,
@@ -152,8 +154,8 @@
               
               afterImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
                   orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
-                 before_label: 'January 2017', 
-                 after_label: 'March 2017',
+                 before_label: 'ionboard X', 
+                 after_label: 'ionboard',
                  no_overlay: true,
                  move_slider_on_hover: false,
                  move_with_handle_only: false,
