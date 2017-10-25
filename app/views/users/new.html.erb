@@ -18,7 +18,7 @@
         <%= stylesheet_link_tag "main", :media => "all" %>
         <%= javascript_include_tag "main" %>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
+
     </head>
 
     <body class="c-layout-header-fixed c-layout-header-fullscreen">
@@ -26,19 +26,19 @@
         <!-- BEGIN: HEADER -->
         <header class="c-layout-header c-layout-header-static c-header-transparent-dark" data-minimize-offset="80">
             <div class="c-navbar">
-                <div class="container" style="margin-right: 0px !important; width: 100%;">
+                <div class="container" style="margin-right: 0px !important; width: 100%; padding: 0px;">
                     <!-- BEGIN: BRAND -->
                     <div class="c-navbar-wrapper clearfix" style="width: 100%;">
-                      <%= image_tag("logo1.png", style: "width: 80px;") %>
+                      <%= image_tag("logo1.png", style: "width: 100px;") %>
                         <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-bold">
-                            <ul class="nav navbar-nav c-theme-nav">
+                            <ul class="nav navbar-nav c-theme-nav" style="padding-right: 10px; padding-top: 5px;">
                                 <li>
-                                    <a href="javascript:;" class="c-link" style="color: #ccc;">ionboard
+                                    <a href="javascript:;" class="c-link" style="color: #ccc; font-size: 22px;">ionboard
                                         <span class="c-arrow c-toggler"></span>
                                     </a>
                                   </li>
                                 <li>
-                                    <a href="javascript:;" class="c-link" style="color: #ccc;">ionboardX
+                                    <a href="javascript:;" class="c-link" style="color: #ccc; font-size: 22px;">ionboard X
                                         <span class="c-arrow c-toggler"></span>
                                     </a>
                                   </li>
@@ -99,8 +99,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="c-copyright c-font-grey" style="text-align: center;">2017 &copy; Atlas Cloud, Inc.
-                                <span class="c-font-grey-3">All Rights Reserved.</span>
+                            <p class="c-copyright c-font-grey" style="text-align: center;">&copy; 2017 by Atlas Cloud, Inc 
                             </p>
                         </div>
                     </div>
@@ -131,7 +130,7 @@
               var beforeImg = $("#container1").find("img:first");
               var afterImg = $("#container1").find("img:last");
               
-              beforeImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
+              afterImg.on ('load', function() { $("#container1").twentytwenty({default_offset_pct: 0.5,
                   orientation: 'vertical', // Orientation of the before and after images ('horizontal' or 'vertical')
                  before_label: 'January 2017', 
                  after_label: 'March 2017',
