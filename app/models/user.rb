@@ -13,7 +13,8 @@ class User < ActiveRecord::Base
   before_create :create_referral_code
   before_create :confirmation_token
   after_create :send_welcome_email
-
+  scope :referrals, -> { where('confirmed_at != ?', nil) }
+  
   REFERRAL_STEPS = [
     {
       'count' => 10,
