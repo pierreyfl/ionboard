@@ -2,7 +2,7 @@ require 'users_helper'
 
 class User < ActiveRecord::Base
   belongs_to :referrer, class_name: 'User', foreign_key: 'referrer_id'
-  has_many :referrals, class_name: 'User', foreign_key: 'referrer_id'
+  has_many :referrals, -> { where(email_confirmed: true)}, class_name: 'User', foreign_key: 'referrer_id'
 
   validates :email, presence: true, uniqueness: true, format: {
     with: /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/i,
@@ -13,7 +13,6 @@ class User < ActiveRecord::Base
   before_create :create_referral_code
   before_create :confirmation_token
   after_create :send_welcome_email
-  scope :referrals, -> { where('confirmed_at != ?', nil) }
   
   REFERRAL_STEPS = [
     {
