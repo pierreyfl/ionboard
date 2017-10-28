@@ -10,7 +10,7 @@ Prelaunchr::Application.routes.draw do
   post 'save_image' , :to => redirect('/save_image.php')
   get 'refer-a-friend' => 'users#refer'
   get 'privacy-policy' => 'users#policy'
-  get 'customise' => 'users#customise'
+  get 'customizer' => 'users#customise'
   get 'demo' => 'users#demo'
   authenticate :admin_user do
     get 'dashboard' => 'users#dashboard'
