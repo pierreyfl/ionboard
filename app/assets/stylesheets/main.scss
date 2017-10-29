@@ -3,9 +3,61 @@
 @import "components";
 @import "custom";
 @import "default";
+@import "normalize";
+@import "demo";
+@import "style1";
 
 
 @font-face {
   font-family: "Avenir Book";
   src: font-url("/assets/AvenirLTStd-Book.otf");
+}
+
+$body-bg-color:#333;
+$side-text-color:#fff;
+$main-bg-color:rgba(200,200,200,.9);
+$main-text-color:#fff;
+
+@media screen and (min-width: 40em) {
+  #mainNav {
+    display:block;
+    text-align:center;
+    margin-left:0;
+    top:0; left:0;
+    opacity:1;
+    padding:0;
+    position:relative;
+    width:100%;
+    z-index:10;
+    
+    #close {display:none;}
+                     
+    ul {font-size:0; border:0px;}
+    ul>:first-child {border-left: 1px solid darken($main-bg-color, 5%);}
+    ul>:last-child {border-right: 1px solid lighten($main-bg-color, 13%);}
+    li {display:inline-block; font-size:16px;}
+    a, a:link, a:visited, a:active, a:focus {
+      border-width:0;
+      border-right: 1px solid darken($main-bg-color, 5%);
+      border-left: 1px solid lighten($main-bg-color, 13%);
+      color:$main-text-color;
+      padding:1em;
+      text-decoration:none;
+    }
+    a:hover {background-color: lighten($main-bg-color, 10%);}
+    li:hover .sub-menu {display:block;}
+
+    .sub-menu {
+      display:none;        
+      position:absolute;
+      background-color: darken($main-bg-color, 5%);
+      border-top: 1px solid darken($main-bg-color, 15%);
+      text-align:left;
+      
+              
+      li {display:block; border:0;}
+      a {border:0; padding-right:5em;}
+       
+    }
+  }      
 }

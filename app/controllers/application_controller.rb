@@ -2,16 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :ref_to_cookie
-  before_filter :ensure_domain
-
-  APP_DOMAIN = 'www.ionboardtech.com'
-
-    def ensure_domain
-      if request.env['HTTP_HOST'] != APP_DOMAIN
-        # HTTP 301 is a "permanent" redirect
-        redirect_to "https://#{APP_DOMAIN}", :status => 301
-      end
-    end
+  
 
   def mobile_device?
     if session[:mobile_param]

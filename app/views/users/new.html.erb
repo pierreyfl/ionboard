@@ -37,16 +37,31 @@
         <!-- End Facebook Pixel Code -->
 
     </head>
-
+                    		
     <body class="c-layout-header-fixed c-layout-header-fullscreen">
+  		
         <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
         <!-- BEGIN: HEADER -->
         <header class="c-layout-header c-layout-header-static c-header-transparent-dark" data-minimize-offset="80">
+      		<div class="overlay overlay-hugeinc">
+      			<button type="button" class="overlay-close">Close</button>
+      			<nav>
+      				<ul>
+      					<li><a href="#">Home</a></li>
+      					<li><a href="#">IONBOARD</a></li>
+      					<li><a href="#">IONBOARD X</a></li>
+      					
+      				</ul>
+      			</nav>
+            
+      		</div>
+          <a href='#' id='trigger-overlay' class='twentywenty-menu'></a>
             <div class="c-navbar">
                 <div class="container" style="margin-right: 0px !important; width: 100%; padding: 0px;">
                     <!-- BEGIN: BRAND -->
                     <div class="c-navbar-wrapper clearfix" style="width: 100%;">
                       <%= image_tag("logo1.png", style: "width: 100px;") %>
+                      
                         <nav class="c-mega-menu c-pull-right c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-bold">
                             <ul class="nav navbar-nav c-theme-nav" style="padding-right: 10px; padding-top: 5px;">
                                 <li>
@@ -62,19 +77,25 @@
                             </ul>
                             
                         </nav>
+                    		
                         <!-- END: MEGA MENU -->
+                    		
                         
                         <!-- END: LAYOUT/HEADERS/MEGA-MENU -->
                         <!-- END: HOR NAV -->
                     </div>
                 </div>
             </div>
+            
         </header>
         <!-- END: HEADER -->
         <!-- END: LAYOUT/HEADERS/HEADER-1 -->
+    		
 
         <!-- BEGIN: PAGE CONTAINER -->
         <div class="c-layout-page">
+          
+      		
             <!-- BEGIN: PAGE CONTENT -->
             <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-8 -->
             <div id="container1">
@@ -96,10 +117,11 @@
                       <div class="input-group input-group-lg c-square">
                         <%= f.text_field :email, :placeholder => "Your Email Here", :class => "form-control c-square c-font-grey-3 c-border-grey c-theme" %>
                         <span class="input-group-btn">
-                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN" style="background-color: grey; color: black;">ENTER</>
+                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN" style="background-color: grey; color: black;">ENTER</input>
                         </span>
                       </div>
                       <% end %>
+                      <p></p>
                    
                   </div>
                    
@@ -181,8 +203,65 @@
             }
           });
           
+          var open = 0;
+          function toggleMenu() {
+            if (open == 0) {
+              document.getElementById("mainNav").className = "open";
+              document.getElementById("mainNav").style.zIndex = "10";
+
+              open = 1;
+            }
+            else if (open == 1) {
+              document.getElementById("mainNav").className = "closed";
+              open = 0;
+            }
+          }
+          
           
           </script>
+          
+          <script>
+            (function() {
+            	var triggerBtn = document.getElementById("trigger-overlay");
+              var overlay = document.querySelector("div.overlay");
+            	var closeBttn = overlay.querySelector( 'button.overlay-close' );
+            		transEndEventNames = {
+            			'WebkitTransition': 'webkitTransitionEnd',
+            			'MozTransition': 'transitionend',
+            			'OTransition': 'oTransitionEnd',
+            			'msTransition': 'MSTransitionEnd',
+            			'transition': 'transitionend'
+            		},
+            		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+            		support = { transitions : Modernizr.csstransitions };
+
+            	function toggleOverlay() {
+            		if( classie.has( overlay, 'open' ) ) {
+            			classie.remove( overlay, 'open' );
+            			classie.add( overlay, 'close' );
+            			var onEndTransitionFn = function( ev ) {
+            				if( support.transitions ) {
+            					if( ev.propertyName !== 'visibility' ) return;
+            					this.removeEventListener( transEndEventName, onEndTransitionFn );
+            				}
+            				classie.remove( overlay, 'close' );
+            			};
+            			if( support.transitions ) {
+            				overlay.addEventListener( transEndEventName, onEndTransitionFn );
+            			}
+            			else {
+            				onEndTransitionFn();
+            			}
+            		}
+            		else if( !classie.has( overlay, 'close' ) ) {
+            			classie.add( overlay, 'open' );
+            		}
+            	}
+
+            	document.getElementById("trigger-overlay").addEventListener( 'click', toggleOverlay );
+            	closeBttn.addEventListener( 'click', toggleOverlay );
+            })();
+            </script>
         
         <script>
             $(document).ready(function()

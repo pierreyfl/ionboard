@@ -25,10 +25,16 @@
       if(!options.no_overlay) {
         container.append("<div class='twentytwenty-overlay'></div>");
       }
+      
+      
+      
       var beforeImg = container.find("img:first");
       var afterImg = container.find("img:last");
       container.append("<div class='twentytwenty-handle'></div>");
+      container.append("")
       var slider = container.find(".twentytwenty-handle");
+      var menuBtn = container.find(".twentywenty-menu");
+      menuBtn.append("<span class='twentytwenty-up-arrow'></span>");
       slider.append("<span class='twentytwenty-" + beforeDirection + "-arrow'></span>");
       slider.append("<span class='twentytwenty-" + afterDirection + "-arrow'></span>");
       container.addClass("twentytwenty-container");
