@@ -236,13 +236,13 @@
             margin: 3px 0; }
             
             
-@media screen and (min-width: 40em) {
+@media (max-width: 480px) {
   .twentywenty-menu {
     height: 38px;
     width: 38px;
     position: absolute;
-    left: 90%;
-    top: 5%;
+    right: 20px;
+    top: 50px;
     margin-left: -22px;
     margin-top: -22px;
     border: 1px solid black;
