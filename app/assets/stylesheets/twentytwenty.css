@@ -241,10 +241,9 @@
     height: 38px;
     width: 38px;
     position: absolute;
-    right: 20px;
-    top: 50px;
-    margin-left: -22px;
-    margin-top: -22px;
+    right: 10;
+    top: 10;
+
     border: 1px solid black;
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
