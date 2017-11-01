@@ -241,9 +241,8 @@
     height: 44px;
     width: 44px;
     position: absolute;
-    right: 10;
-    top: 30;
 
+    padding: 4px 0 0 5px;
     border: 1px solid black;
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
