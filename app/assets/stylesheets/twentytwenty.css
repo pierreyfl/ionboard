@@ -237,9 +237,9 @@
             
             
 @media (max-width: 480px) {
-  .twentywenty-menu {
-    height: 38px;
-    width: 38px;
+ .twentywenty-menu {
+    height: 44px;
+    width: 44px;
     position: absolute;
     right: 10;
     top: 30;
@@ -248,9 +248,10 @@
     -webkit-border-radius: 1000px;
     -moz-border-radius: 1000px;
     border-radius: 1000px;
-    z-index: 40;
+    z-index: 9999;
     cursor: pointer; 
     display: block;
+    background: #fff;
   }
   
   .bar1, .bar2, .bar3 {
