@@ -11,10 +11,12 @@ Prelaunchr::Application.routes.draw do
   get 'refer-a-friend' => 'users#refer'
   get 'privacy-policy' => 'users#policy'
   get 'iondesign' => 'users#customise'
+  get 'order_confirmed' => 'users#order_confirmed'
   get 'demo' => 'users#demo'
   authenticate :admin_user do
     get 'dashboard' => 'users#dashboard'
   end
+  resources :confirms
   
   
   resources :users do

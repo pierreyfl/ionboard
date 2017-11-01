@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6 <%= @bodyId %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 <%= @bodyId %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 <%= @bodyId %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 <%= @bodyId %>"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
+<head>
+  <title>ionboard: Premium electric skateboard for all</title>
+  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="ionboard"/>
+  <meta property="og:description" content="Premium electric skateboard for all."/>
+  <meta property="og:image" content="<%= asset_path("refer/ionboard-single.png") %>"/>
+  <meta property="og:url" content="<%= root_url %>"/>
+  
+
+
+  <%= stylesheet_link_tag "customise", :media => "all" %>
+  <%= javascript_include_tag "customise.js" %>
+  <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js" crossorigin="anonymous"></script>
+  
+</head>
+<body style="margin: 0px;">
+  <div class="header" style="background-color: black;">
+    <img src="images/skateboard/logo-ionboard.png" style="width:180px; padding: 30px;"></img>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col">
+          <h1 style="text-align: center; margin-top: 30px;">Please confirm your order</h1>
+          <%= link_to image_tag(@order.design.url(:original), style: "margin: 0 auto; width: 800px; display: block" ), @order.design.url(:original), :popup=>['original_image'] %>
+          <h4></h4>
+          <%= form_for @confirm, html: {style: "width: 50%; padding: 50px;"} do |f| %>
+          <%= f.hidden_field :order_id, value: @order.id %>
+          <%= f.hidden_field :amount, value: @order.amount %>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Full Name</label>
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <%= f.text_field :email, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">address</label>
+            <%= f.text_field :address, class: "form-control" %>
+          </div>
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-amount="<%= @order.amount * 100 %>"
+            data-name="ionboard"
+            data-description="The best electric skateboard"
+            data-image="https://www.ionboardtech.com/images/skateboard/logo-ionboard.png"
+            data-locale="auto">
+          </script>
+            
+          <% end %>
+            
+        </div>
+        
+      </div>
+  </div>
+  
+      
+		  	
+    	</div>
+    </body>

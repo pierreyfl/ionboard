@@ -163,7 +163,7 @@
                 <tr>
                   <th>Image</th>
                   <th>Order Number</th>
-                  <th>Process</th>
+                  <th>Email</th>
                   <th>Payment</th>
                 </tr>
               </thead>
@@ -173,8 +173,12 @@
                   <td><%= link_to image_tag(order.design.url(:thumb)), order.design.url(:original), :popup=>['original_image'] %></td>
                   <td><%= order.order_number%></td>
                   <td><%= order.email %></td>
-                  <td>Demo</td>
-                  <td>Demo</td>
+                  <td><% if order.confirm.nil? %>
+                      Paid
+                      <% else %>
+                      Unpaid
+                      <% end %>
+                    </td>
                 </tr>
                 <% end %>
               </tbody>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022081341) do
+ActiveRecord::Schema.define(version: 20171101005958) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,18 @@ ActiveRecord::Schema.define(version: 20171022081341) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "confirms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "address"
+    t.integer  "order_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "amount"
+  end
+
+  add_index "confirms", ["order_id"], name: "index_confirms_on_order_id", using: :btree
+
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer  "priority",   default: 0
     t.integer  "attempts",   default: 0
@@ -82,6 +94,7 @@ ActiveRecord::Schema.define(version: 20171022081341) do
     t.string   "design_content_type"
     t.integer  "design_file_size"
     t.datetime "design_updated_at"
+    t.integer  "amount"
   end
 
   create_table "users", force: :cascade do |t|
@@ -95,4 +108,5 @@ ActiveRecord::Schema.define(version: 20171022081341) do
     t.string   "ip_address"
   end
 
+  add_foreign_key "confirms", "orders"
 end

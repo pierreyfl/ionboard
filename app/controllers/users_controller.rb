@@ -92,6 +92,15 @@ class UsersController < ApplicationController
     end
   end
   
+  def order_confirmed
+    @order = Order.last
+    @confirm = Confirm.new
+    
+    respond_to do |format|
+      format.html { render :layout => false } # your-action.html.erb
+    end
+  end
+  
   def dashboard
     
     @order = Order.all
@@ -116,6 +125,10 @@ class UsersController < ApplicationController
     else
       cookies.delete :h_email
     end
+  end
+  
+  def params_confirm
+    
   end
 
   def handle_ip
