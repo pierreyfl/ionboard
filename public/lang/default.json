@@ -44,7 +44,7 @@
 		"magnify_glass": "Magnify Glass",
 		"download": "Download",
 		"info": "Info",
-		"info_content": "Content for the Info Action Button. Change content via language JSON.",
+		"info_content": "If you have any questions about iondesign, please email to dp@ionboardtech.com. Thank you!",
 		"print": "Print",
 		"save": "Save",
 		"load": "Load",
