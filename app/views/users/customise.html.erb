@@ -66,7 +66,8 @@
 
     	yourDesigner = new FancyProductDesigner($yourDesigner, pluginOpts);
       console.log(yourDesigner)
-      $("#checkout-button").click(function() {
+      $("#checkout-button").click(function(event) {
+        event.preventDefault();
         var email = $("#userInputEmail").val();
         var order = $("#orderNumber").val();
         var amount = yourDesigner.currentPrice
@@ -76,7 +77,7 @@
               url: "/orders",
               data: {order: { image_json: dataURL, email: email, order_number: order, amount: amount }},
               success: function(data) {
-                window.location.href = "https://www,ionboardtech.com/order_confirmed";
+                jQuery("#order_form").html(data);
               },
               error: function(data) {
                 data = data.responseJSON.error
@@ -194,7 +195,7 @@
        
         <div class="row" style="width:50%; margin: auto;">
            <h3 style="text-align: center">Please fill in your information to place order</h3>
-        <form>
+        <form id="order_form">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input type="email" class="form-control" id="userInputEmail" aria-describedby="emailHelp" placeholder="Enter email">

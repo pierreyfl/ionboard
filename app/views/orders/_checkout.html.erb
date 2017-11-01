@@ -1,0 +1,27 @@
+          <%= form_for @confirm do |f| %>
+          <%= f.hidden_field :order_id, value: @order.id %>
+          <%= f.hidden_field :amount, value: @order.amount %>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Full Name</label>
+            <%= f.text_field :name, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <%= f.text_field :email, class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">address</label>
+            <%= f.text_field :address, class: "form-control" %>
+          </div>
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+            data-amount="<%= @order.amount * 100 %>"
+            data-name="ionboard"
+            data-description="The best electric skateboard"
+            data-image="https://www.ionboardtech.com/images/skateboard/logo-ionboard.png"
+            data-locale="auto">
+          </script>
+            
+          <% end %>
+            

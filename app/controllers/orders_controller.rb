@@ -13,7 +13,8 @@ class OrdersController < ApplicationController
     #png = Base64.decode64(data_url['data:image/png;base64,'.length..-1])
     #File.open('text.png','wb') {|f| f.write(png)}
     if @order.save
-      render :json => { :success => true }
+      @confirm = Confirm.new
+      render :partial => 'checkout'
     else
       puts "FAILED"
       puts @order.errors.full_messages

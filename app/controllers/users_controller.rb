@@ -86,7 +86,8 @@ class UsersController < ApplicationController
   end
   
   def customise
-    
+    @order = Order.last
+    @confirm = Confirm.new
     respond_to do |format|
       format.html { render :layout => false } # your-action.html.erb
     end
