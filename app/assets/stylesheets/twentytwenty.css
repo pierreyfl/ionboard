@@ -261,17 +261,36 @@
       margin: 6px 5px;
       transition: 0.4s;
       font-weight: bold;
-  }
-  
-  .bar2, .bar3 {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-    
+      position: absolute;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
   }
   
   .bar1 {
-    margin-bottom: 5px !important;
-    margin-top: 10px !important;
+    top: 4px;
+  }
+  .bar2 {
+    top: 13px;
+    opacity: 1px;
+  }
+  .bar3 {
+    top: 22px;
   }
   
+  .pushed-btn .bar1 {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    top: 14px;
+  }
+  
+  .pushed-btn .bar2 {
+    opacity: 0;
+  }
+  .pushed-btn .bar3 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 14px;  
+  }
 }
