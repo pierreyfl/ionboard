@@ -76,7 +76,7 @@
               url: "/orders",
               data: {order: { image_json: dataURL, email: email, order_number: order, amount: amount }},
               success: function(data) {
-                window.location.href = "http://localhost:3000/order_confirmed";
+                window.location.href = "https://www,ionboardtech.com/order_confirmed";
               },
               error: function(data) {
                 data = data.responseJSON.error
