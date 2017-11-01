@@ -9,10 +9,6 @@
             <label for="exampleFormControlInput1">Email</label>
             <%= f.text_field :email, class: "form-control" %>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">address</label>
-            <%= f.text_field :address, class: "form-control" %>
-          </div>
           <script
             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
