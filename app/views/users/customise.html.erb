@@ -70,6 +70,10 @@
       console.log(yourDesigner)
       $("#checkout-button").click(function(event) {
         event.preventDefault();
+        $('#order_form').hide();
+        $('#img').show();
+        
+        
         var email = $("#userInputEmail").val();
         var order = $("#orderNumber").val();
         var amount = yourDesigner.currentPrice
@@ -81,7 +85,9 @@
               url: "/orders",
               data: {order: { image_json: dataURL, email: email, order_number: order, amount: amount, images_json: el }},
               success: function(data) {
+                $('#img').hide();
                 jQuery("#order_form").html(data);
+                $('#order_form').show();
               },
               error: function(data) {
                 data = data.responseJSON.error
@@ -199,6 +205,7 @@
        <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
          <div class="container">
            <h3>Please fill in your information to place order</h3>
+           <img src="/images/Spinner.gif" id="img" style="display:none"/>
            <form id="order_form">
              <div class="form-group">
                <label for="exampleInputEmail1">Email address</label>
@@ -208,6 +215,7 @@
              <div class="form-group">
                <label for="exampleInputPassword1">Order Number</label>
                <input type="text" class="form-control" id="orderNumber" placeholder="Your Kickstarter Order No.">
+               <small id="emailHelp" class="form-text text-muted">It will cost $39 to customize your griptape.</small>
              </div>
      		  	<div class="fpd-clearfix" style="margin-top: 30px;">
      			  	<div class="api-buttons fpd-container">
@@ -222,33 +230,5 @@
 
 		  	
     	</div>
-
-<script>
-  $(document).ready(function(){
-
-var $fpd = $('#fpd'),
-      pluginOpts = {stageWidth: 1200, stageHeight: 800};
-
-var yourDesigner = new FancyProductDesigner($fpd, pluginOpts);
-
-
-    
-
-
-    //you can listen to events
-    $fpd.on('productCreate', function() {
-  	//do something
-    });
-    $('#checkout-button1').click(function(){
-    	//store the views of a product with all elements of a single view
-    	var productViews = yourDesigner.getProduct();
-    	//loop through all views
-    	for(var i=0; i < productViews.length; ++i) {
-    		//output all single view objects
-    		console.log(productViews[i]);
-    	}
-    });
-  });
-  </script>
 </body>
 </html>

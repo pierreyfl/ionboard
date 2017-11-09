@@ -104,28 +104,50 @@
             </div>
             
             <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-8 -->
+            
             <!-- BEGIN: CONTENT/ISOTOPE/GRID-2 -->
             <div class="c-content-box c-size-md c-bg-img-center" style="background-color: black;">
+              
                 <div class="container">
-                    <div class="c-content-title-1">
-                      <h3 class="c-center c-font-uppercase" style="color: white;">Premium electric longboard for all</h3>
-                        <h3 class="c-center c-font-uppercase" style="color: white;">Join Our Referral Program</h3>
-                        <div class="c-line-center" style="color: white; background-color: white;"></div>
-                        <p class="c-font-center" style="color: white">$50 OFF, First 10 Friends Joined</p>
-                    </div>
-                    <div class="col-md-12">
-                      
-                      <%= form_for @user, :url => { :action => "create" } do |f| %>
-                      <div class="input-group input-group-lg c-square">
-                        <%= f.text_field :email, :placeholder => "Your Email Here", :class => "form-control c-square c-font-grey-3 c-border-grey c-theme" %>
-                        <span class="input-group-btn">
-                            <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN" style="background-color: grey; color: black;">ENTER</input>
-                        </span>
-                      </div>
-                      <% end %>
-                      <p></p>
-                   
-                  </div>
+                  <div class="c-content-title-1" style="margin-bottom: 50px;">
+                                        <h3 class="c-center c-font-uppercase" style="color: white;">Our <span style="color: #87c442">Kickstarter</span> Campaign Has Started!</h3>
+                                          <h3 class="c-center c-font-uppercase" style="color: white;">$299 Limited Release</h3>
+                        <%= link_to "https://www.kickstarter.com/projects/1728725377/ionboard" do %>
+                                          <div class="btn btn-primary" style="color: white; margin: auto; display: block; width: 50%; background-color: #87c442; ">Back Us On Kickstarter</div>
+                                          <% end %>
+                                      </div>
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="c-content-title-1" style="margin-bottom: 50px;">
+                                                              <h3 class="c-center c-font-uppercase" style="color: white;">For Registered Users</h3>
+                                                                <h3 class="c-center c-font-uppercase" style="color: white;">Check your reward</h3>
+                                                                <div class="c-line-center" style="color: white; background-color: white;"></div>
+                                                                <p class="c-font-center" style="color: white">Login to your dashboard</p>
+                        
+                                                                <%= form_for @user, :url => { :action => "create" } do |f| %>
+                                                                <div class="input-group input-group-lg c-square">
+                                                                  <%= f.text_field :email, :placeholder => "Your Email Here", :class => "form-control c-square c-font-grey-3 c-border-grey c-theme" %>
+                                                                  <span class="input-group-btn">
+                                                                      <input class="btn c-btn-square c-btn-white c-btn-uppercase c-font-16" type="submit" value="LOGIN" style="background-color: grey; color: black;">ENTER</input>
+                                                                  </span>
+                                                                </div>
+                                                                <% end %>
+                                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="c-content-title-1" style="margin-bottom: 50px;">
+                                                              <h3 class="c-center c-font-uppercase" style="color: white;">For New Users</h3>
+                                                                <h3 class="c-center c-font-uppercase" style="color: white;">Join our referral program</h3>
+                                                                <div class="c-line-center" style="color: white; background-color: white;"></div>
+                                                                <p class="c-font-center" style="color: white">Earn $50 for each referral</p>
+                        <%= link_to "https://ionboard.kickbooster.me/boost" do %>
+                                                                <div class="btn btn-primary" style="color: white; margin: auto; display: block; width: 50%; background-color: #000; border-color: white; height: 45px; font-size: 20px; ">Join Referral Program</div>
+                                                                <% end %>
+                                                            </div>
+                                      </div>
+                                    </div>
+                    
+                    
                    
                 </div>
             </div>

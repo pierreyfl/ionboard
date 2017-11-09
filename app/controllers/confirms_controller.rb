@@ -13,7 +13,7 @@ class ConfirmsController < ApplicationController
 
         charge = Stripe::Charge.create(
           customer: customer.id,
-          amount: @confirm.amount,
+          amount: @confirm.amount * 100,
           description: 'Iondesign customer',
           currency: 'usd'
         )
