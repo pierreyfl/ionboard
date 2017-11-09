@@ -73,11 +73,13 @@
         var email = $("#userInputEmail").val();
         var order = $("#orderNumber").val();
         var amount = yourDesigner.currentPrice
+
         yourDesigner.getProductDataURL(function(dataURL) {
+          var el = yourDesigner.getProduct(false, false)[0].elements
           $.ajax({
               type: "POST",
               url: "/orders",
-              data: {order: { image_json: dataURL, email: email, order_number: order, amount: amount }},
+              data: {order: { image_json: dataURL, email: email, order_number: order, amount: amount, images_json: el }},
               success: function(data) {
                 jQuery("#order_form").html(data);
               },

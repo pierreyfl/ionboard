@@ -15,6 +15,7 @@ Prelaunchr::Application.routes.draw do
   get 'demo' => 'users#demo'
   authenticate :admin_user do
     get 'dashboard' => 'users#dashboard'
+    get 'dashboard/:order_id' => 'orders#show', as: 'dashboard_order'
   end
   resources :confirms
   

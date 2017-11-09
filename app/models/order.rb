@@ -7,6 +7,7 @@ class Order < ActiveRecord::Base
   has_attached_file :design, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
   validates_attachment_content_type :design, content_type: /\Aimage\/.*\z/
   has_one :confirm
+  has_many :pictures
   
   def set_image(image_json)
       StringIO.open(Base64.decode64(image_json)) do |data|

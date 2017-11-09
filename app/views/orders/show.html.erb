@@ -156,41 +156,28 @@
 
         
 
-          <h2 class="sub-header">Orders</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Image</th>
-                  <th>Order Number</th>
-                  <th>Email</th>
-                  <th>Payment</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @order.each do |order| %>
-                <tr>
-                  <td><%= link_to image_tag(order.design.url(:thumb)), order.design.url(:original), :popup=>['original_image'] %></td>
-                  <td><%= order.order_number%></td>
-                  <td><%= order.email %></td>
-                  <td><% if order.confirm.nil? %>
-                      Unpaid
-                      <% else %>
-                      Paid
-                      <% end %>
-                    </td>
-                    <td>
-                      <%= link_to dashboard_order_path(order.id) do %>
-                      <div class="btn btn-primary">View Photos</div>
-                      <% end %>
-                    </td>
-                </tr>
-                <% end %>
-              </tbody>
-            </table>
+          <h2 class="sub-header">Images</h2>
+          <% @order.pictures.in_groups_of(3, false).each do |group| %>
+           <div class="row">
+             <% group.each do |picture| %>
+             
+            <div class="col-md-4">
+              <div class="thumbnail">
+                <%= link_to image_tag(picture.image.url(:thumb)), picture.image.url(:original), :popup=>['original_image'] %>
+
+              </div>
+            </div>
+            <% end %>
+            
           </div>
+          <% end %>
+          <%= link_to dashboard_path do %>
+          <div class="btn btn-primary">Back to dashboard</div>
+          <% end %>
         </div>
+        
       </div>
+      
     </div>
 
     <!-- Bootstrap core JavaScript
