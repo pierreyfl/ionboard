@@ -19,6 +19,11 @@ $main-bg-color:rgba(200,200,200,.9);
 $main-text-color:#fff;
 
 @media screen and (min-width: 40em) {
+  
+  #btn-kickstarter {
+    width: 100% !important;
+    
+  }
   #mainNav {
     display:block;
     text-align:center;
