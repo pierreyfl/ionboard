@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
   end
   
   def display_name
-    self.email
+    self.id
   end
     
 
