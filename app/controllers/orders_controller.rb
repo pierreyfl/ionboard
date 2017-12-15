@@ -26,22 +26,7 @@ class OrdersController < ApplicationController
     #File.open('text.png','wb') {|f| f.write(png)}
     if @order.save
       images = params[:order][:images_json]
-      images.each do |k, v|
-        if v["source"].include? "data:"
-          image = Paperclip.io_adapters.for(v["source"])
-          image.original_filename = v["title"]
-          @picture = Picture.new
-          @picture.image = image
-          @picture.order_id = @order.id
-          @picture.save
-        else
-          host_url = "https://www.ionboardtech.com/"
-          @picture = Picture.new
-          @picture.image_remote_url = host_url + v["source"]
-          @picture.order_id = @order.id
-          @picture.save
-        end
-      end
+      ImageWorker.perform_async(images, @order.id)
       @confirm = Confirm.new
       render :partial => 'checkout'
     else
