@@ -53,5 +53,7 @@ module Prelaunchr
 
     # decides whether the prelaunch campaign has ended or not
     config.ended = ENV['CAMPAIGN_ENDED'].to_s == 'true'
+    
+    config.active_job.queue_adapter = :sidekiq
   end
 end
