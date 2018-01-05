@@ -6,7 +6,7 @@ class ConfirmsController < ApplicationController
     @confirm = Confirm.new(confirm_params)
     if @confirm.save
       
-        Stripe.api_key = Rails.application.secrets.stripe_secret_key
+        Stripe.api_key = ENV["STRIPE_SECRET_KEY"]
 
         customer = Stripe::Customer.create(
           email: params[:stripeEmail],
